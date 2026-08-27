@@ -1,26 +1,4 @@
-import Link from "next/link";
-
-import { GradientButton } from "@/components/ui/gradient-button";
-
-const navigation = ["Home", "About us", "What we do", "Insights", "Careers"];
-
+import { siteConfig } from "@/config/site";
 export function SiteHeader() {
-  return (
-    <header className="site-header">
-      <nav aria-label="Main navigation" className="site-header__inner container">
-        <Link href="#home" className="brand" aria-label="Nexora home">
-          <span className="brand__mark"><i /><i /><i /></span>
-          <span>NEXORA</span>
-        </Link>
-        <div className="site-header__links">
-          {navigation.map((item) => (
-            <Link href={item === "Home" ? "#home" : `#${item.toLowerCase().replaceAll(" ", "-")}`} key={item}>
-              {item}
-            </Link>
-          ))}
-        </div>
-        <GradientButton href="#contact" className="site-header__cta">Let&apos;s talk</GradientButton>
-      </nav>
-    </header>
-  );
+  return <header className="site-header"><a className="brand" href="#top" aria-label="Sixth Lens home"><span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /><i /><i /></span><span>sixth lens</span></a><nav aria-label="Primary navigation"><a href="#services">Services</a><a href="#qatar">For Qatar</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav><div className="header-actions"><a className="header-phone" href={`tel:${siteConfig.phoneHref}`}>{siteConfig.phoneDisplay}</a><a className="button button-small" href="#contact">Book a strategy call</a></div></header>;
 }

@@ -1,84 +1,30 @@
-import type { LucideIcon } from "lucide-react";
-import { Blocks, BrainCircuit, Code2, ShieldCheck, Sparkles, Workflow } from "lucide-react";
+export const lenses = [
+  { number: "01", eyebrow: "Presence", title: "Web platforms", description: "Fast, accessible websites and commerce experiences built to earn trust in Qatar and convert attention into action.", deliverables: ["Corporate websites", "E-commerce", "Portals and platforms"] },
+  { number: "02", eyebrow: "Attention", title: "Digital marketing", description: "Search, content and campaign systems shaped around how customers in Qatar discover, compare and decide.", deliverables: ["SEO and local search", "Paid campaigns", "Content systems"] },
+  { number: "03", eyebrow: "Access", title: "Mobile products", description: "Useful iOS, Android and cross-platform apps designed for customers, field teams and everyday operations.", deliverables: ["Customer apps", "Field operations", "Loyalty experiences"] },
+  { number: "04", eyebrow: "Memory", title: "CRM and automation", description: "A connected customer record that turns enquiries, WhatsApp conversations and follow-ups into a clear sales process.", deliverables: ["CRM implementation", "WhatsApp workflows", "Sales automation"] },
+  { number: "05", eyebrow: "Scale", title: "Cloud systems", description: "Secure, observable infrastructure and integrations that give growing teams room to move without adding operational drag.", deliverables: ["Cloud architecture", "DevOps and reliability", "System integration"] },
+  { number: "06", eyebrow: "Clarity", title: "Data and applied AI", description: "Practical intelligence that connects your data, removes repetitive work and gives decision-makers a sharper view.", deliverables: ["Operational dashboards", "AI assistants", "Workflow intelligence"] },
+] as const;
 
-export type Solution = {
-  title: string;
-  description: string;
-  image: string;
-  imageAlt: string;
-};
+export const qatarOffers = [
+  { code: "LAUNCH", title: "Qatar digital launch", description: "A credible brand, high-performance website and local discovery foundation for a new or repositioned business.", audience: "For new ventures and market entrants" },
+  { code: "GROW", title: "Demand-to-deal engine", description: "Campaigns, landing pages, WhatsApp, CRM and follow-up automation working as one measurable journey.", audience: "For service, property and B2B teams" },
+  { code: "OPERATE", title: "Smart field operations", description: "Mobile workflows, dispatch, approvals and dashboards for teams delivering work away from a desk.", audience: "For logistics, facilities and field services" },
+  { code: "EXPERIENCE", title: "Visitor and event systems", description: "Registration, ticketing, multilingual journeys and real-time operations for high-volume experiences.", audience: "For tourism, culture and events" },
+] as const;
 
-export type Capability = {
-  title: string;
-  description: string;
-  icon: LucideIcon;
-  accent: string;
-};
+export const journeySteps = [
+  ["01", "A customer discovers your campaign or local search result"],
+  ["02", "A focused landing page turns interest into an enquiry"],
+  ["03", "WhatsApp or a form captures the conversation without friction"],
+  ["04", "CRM routes the lead, triggers follow-up and preserves context"],
+  ["05", "A live dashboard shows what is working and where to act next"],
+] as const;
 
-export const solutions: Solution[] = [
-  {
-    title: "AI products",
-    description: "Useful, human-first AI experiences that move from idea to adoption.",
-    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=85",
-    imageAlt: "Vibrant abstract gradient in blue and pink",
-  },
-  {
-    title: "Digital systems",
-    description: "Connected platforms that make your operations feel effortless.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=85",
-    imageAlt: "Satellite view of a connected world",
-  },
-  {
-    title: "Growth engines",
-    description: "Experiments, data, and intelligent automation designed to compound.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=85",
-    imageAlt: "Colourful analytics visualisation",
-  },
-];
-
-export const capabilities: Capability[] = [
-  {
-    title: "Applied AI",
-    description: "From the right model to the right workflow, we create AI your team can actually use.",
-    icon: BrainCircuit,
-    accent: "aqua",
-  },
-  {
-    title: "Product design",
-    description: "We turn complicated systems into clear, memorable product experiences.",
-    icon: Sparkles,
-    accent: "pink",
-  },
-  {
-    title: "Modern engineering",
-    description: "Fast, resilient software built to evolve with the opportunities ahead.",
-    icon: Code2,
-    accent: "violet",
-  },
-  {
-    title: "Automation",
-    description: "Intelligent handoffs that remove the repetitive work holding teams back.",
-    icon: Workflow,
-    accent: "orange",
-  },
-  {
-    title: "Platform strategy",
-    description: "The roadmap, operating model, and technical choices to create real momentum.",
-    icon: Blocks,
-    accent: "mint",
-  },
-  {
-    title: "Responsible by design",
-    description: "Security, quality, and people stay at the centre of everything we make.",
-    icon: ShieldCheck,
-    accent: "blue",
-  },
-];
-
-export const journey = [
-  ["01", "Find the signal", "We look past the noise to frame the opportunity worth solving."],
-  ["02", "Shape the system", "We design the customer experience and technical blueprint together."],
-  ["03", "Build in the open", "Small releases, meaningful feedback, and a clear view of progress."],
-  ["04", "Launch with confidence", "A polished product, a prepared team, and metrics that matter."],
-  ["05", "Keep compounding", "We stay close to help you learn, optimise, and create the next advantage."],
+export const faqs = [
+  { question: "Does Sixth Lens work with businesses outside Qatar?", answer: "Yes. Qatar is our home market and informs how we design, but our web, mobile, CRM, cloud and marketing services can support regional and international teams." },
+  { question: "Can you improve an existing system instead of rebuilding it?", answer: "Yes. We begin with a practical audit, identify the highest-impact gaps and recommend whether to integrate, modernize or rebuild only where it creates clear value." },
+  { question: "Will the website support Arabic and English?", answer: "We can design bilingual experiences with right-to-left layouts, Arabic content workflows and language-aware search foundations as part of the project scope." },
+  { question: "How do projects start?", answer: "Projects begin with a focused strategy session. We align on the business outcome, users, scope, delivery plan and the measures that will define success." },
 ] as const;

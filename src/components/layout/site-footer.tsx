@@ -1,32 +1,4 @@
-import Link from "next/link";
-import { Instagram, Linkedin, Twitter } from "lucide-react";
-
-import { GradientButton } from "@/components/ui/gradient-button";
-
-const footerLinks = ["Work", "Capabilities", "About", "Insights", "Contact"];
-
+import { siteConfig } from "@/config/site";
 export function SiteFooter() {
-  return (
-    <footer className="site-footer" id="contact">
-      <div className="container site-footer__top">
-        <div>
-          <p className="eyebrow">Make the next move</p>
-          <h2>Have an ambitious idea?<br />Let&apos;s give it momentum.</h2>
-        </div>
-        <GradientButton href="mailto:hello@nexora.studio">Start a conversation</GradientButton>
-      </div>
-      <div className="container site-footer__bottom">
-        <div className="brand brand--footer"><span className="brand__mark"><i /><i /><i /></span><span>NEXORA</span></div>
-        <div className="site-footer__links">
-          {footerLinks.map((item) => <Link href={`#${item.toLowerCase()}`} key={item}>{item}</Link>)}
-        </div>
-        <div className="site-footer__socials">
-          <Link href="https://www.linkedin.com" aria-label="LinkedIn"><Linkedin size={17} /></Link>
-          <Link href="https://x.com" aria-label="X / Twitter"><Twitter size={17} /></Link>
-          <Link href="https://www.instagram.com" aria-label="Instagram"><Instagram size={17} /></Link>
-        </div>
-      </div>
-      <div className="container site-footer__legal"><span>© 2026 Nexora Studio. All rights reserved.</span><span>Privacy · Terms</span></div>
-    </footer>
-  );
+  return <footer className="site-footer"><div className="footer-lead"><p className="kicker">Your next chapter</p><h2>One partner. Six lenses.<br />One connected business.</h2><a className="button" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a></div><div className="footer-meta"><div><a className="brand" href="#top"><span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /><i /><i /></span><span>sixth lens</span></a><p>{siteConfig.location}<br />Technology designed around real business outcomes.</p></div><div><p className="meta-label">Contact</p><a href={`tel:${siteConfig.phoneHref}`}>{siteConfig.phoneDisplay}</a><a href={siteConfig.whatsappUrl}>WhatsApp</a><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></div><div><p className="meta-label">Explore</p><a href="#services">Services</a><a href="#qatar">Qatar solutions</a><a href="#approach">Approach</a></div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Sixth Lens Technology</span><span>Designed and engineered in Qatar</span></div></footer>;
 }
