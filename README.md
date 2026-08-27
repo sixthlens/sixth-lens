@@ -20,11 +20,23 @@ npm run build
 
 The production build is exported to `out/` as static files.
 
-## GitHub Pages
+## Production deployment
 
-The workflow in `.github/workflows/deploy-pages.yml` builds and deploys the site whenever `main` is pushed. In the GitHub repository, open **Settings → Pages** and select **GitHub Actions** as the source.
+The production site is hosted at `https://sixthlense.com` using a private S3 origin and CloudFront.
 
-The build automatically adds the repository name as the Next.js base path for project sites. User or organization sites ending in `.github.io` remain at the root.
+```bash
+npm run deploy:aws
+```
+
+This command builds the static export, uploads immutable assets with long-lived caching, uploads HTML and SEO files with revalidation, then clears the CloudFront cache.
+
+AWS resources:
+
+- S3 bucket: `sixthlense-com-494934332052`
+- CloudFront distribution: `EAXGJOPZ85I2R`
+- ACM certificate region: `us-east-1`
+- Primary AWS region: `us-west-2`
+- DNS: Hostinger, pointing the root ALIAS and `www` CNAME to CloudFront
 
 ## Before launch
 

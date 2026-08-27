@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy:aws": "bash scripts/deploy-aws.sh",
     "start": "next start",
     "preview": "npx serve out",
     "typecheck": "tsc --noEmit"
