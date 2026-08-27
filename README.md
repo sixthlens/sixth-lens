@@ -30,6 +30,8 @@ npm run deploy:aws
 
 This command builds the static export, uploads immutable assets with long-lived caching, uploads HTML and SEO files with revalidation, then clears the CloudFront cache.
 
+Every push to `main` also runs `.github/workflows/deploy-aws.yml`. GitHub authenticates to AWS using short-lived OIDC credentials through the `GitHubActionsSixthLensDeploy` IAM role; no AWS access keys are stored in GitHub.
+
 AWS resources:
 
 - S3 bucket: `sixthlense-com-494934332052`

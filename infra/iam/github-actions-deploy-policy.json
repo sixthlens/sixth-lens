@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListProductionBucket",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket", "s3:GetBucketLocation"],
+      "Resource": "arn:aws:s3:::sixthlense-com-494934332052"
+    },
+    {
+      "Sid": "DeployProductionObjects",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject", "s3:DeleteObject"],
+      "Resource": "arn:aws:s3:::sixthlense-com-494934332052/*"
+    },
+    {
+      "Sid": "InvalidateProductionDistribution",
+      "Effect": "Allow",
+      "Action": "cloudfront:CreateInvalidation",
+      "Resource": "arn:aws:cloudfront::494934332052:distribution/EAXGJOPZ85I2R"
+    }
+  ]
+}
