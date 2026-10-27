@@ -7,6 +7,7 @@ export const siteConfig = {
   phoneDisplay: "+974 3031 3046",
   phoneHref: "+97430313046",
   whatsappUrl: "https://wa.me/97430313046",
+  linkedinUrl: "https://www.linkedin.com/company/sixth-lens/?viewAsMember=true",
   location: "Doha, Qatar",
 } as const;
 
