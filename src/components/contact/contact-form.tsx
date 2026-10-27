@@ -41,6 +41,7 @@ export function ContactForm() {
           <option>CRM and automation</option>
           <option>Cloud and integration</option>
           <option>Data and applied AI</option>
+          <option>E-invoicing workflow and integration</option>
           <option>Not sure yet</option>
         </select>
       </label>

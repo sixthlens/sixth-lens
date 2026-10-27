@@ -1,10 +1,10 @@
 export const lenses = [
-  { number: "01", eyebrow: "Presence", title: "Web platforms", description: "Fast, accessible websites and commerce experiences built to earn trust in Qatar and convert attention into action.", deliverables: ["Corporate websites", "E-commerce", "Portals and platforms"] },
-  { number: "02", eyebrow: "Attention", title: "Digital marketing", description: "Search, content and campaign systems shaped around how customers in Qatar discover, compare and decide.", deliverables: ["SEO and local search", "Paid campaigns", "Content systems"] },
-  { number: "03", eyebrow: "Access", title: "Mobile products", description: "Useful iOS, Android and cross-platform apps designed for customers, field teams and everyday operations.", deliverables: ["Customer apps", "Field operations", "Loyalty experiences"] },
-  { number: "04", eyebrow: "Memory", title: "CRM and automation", description: "A connected customer record that turns enquiries, WhatsApp conversations and follow-ups into a clear sales process.", deliverables: ["CRM implementation", "WhatsApp workflows", "Sales automation"] },
-  { number: "05", eyebrow: "Scale", title: "Cloud systems", description: "Secure, observable infrastructure and integrations that give growing teams room to move without adding operational drag.", deliverables: ["Cloud architecture", "DevOps and reliability", "System integration"] },
-  { number: "06", eyebrow: "Clarity", title: "Data and applied AI", description: "Practical intelligence that connects your data, removes repetitive work and gives decision-makers a sharper view.", deliverables: ["Operational dashboards", "AI assistants", "Workflow intelligence"] },
+  { number: "01", eyebrow: "Presence", title: "Web platforms", slug: "web-development", description: "Fast, accessible websites and commerce experiences built to earn trust in Qatar and convert attention into action.", deliverables: ["Corporate websites", "E-commerce", "Portals and platforms"] },
+  { number: "02", eyebrow: "Attention", title: "Digital marketing", slug: "digital-marketing", description: "Search, content and campaign systems shaped around how customers in Qatar discover, compare and decide.", deliverables: ["SEO and local search", "Paid campaigns", "Content systems"] },
+  { number: "03", eyebrow: "Access", title: "Mobile products", slug: "mobile-app-development", description: "Useful iOS, Android and cross-platform apps designed for customers, field teams and everyday operations.", deliverables: ["Customer apps", "Field operations", "Loyalty experiences"] },
+  { number: "04", eyebrow: "Memory", title: "CRM and automation", slug: "crm-automation", description: "A connected customer record that turns enquiries, WhatsApp conversations and follow-ups into a clear sales process.", deliverables: ["CRM implementation", "WhatsApp workflows", "Sales automation"] },
+  { number: "05", eyebrow: "Scale", title: "Cloud systems", slug: "cloud-solutions", description: "Secure, observable infrastructure and integrations that give growing teams room to move without adding operational drag.", deliverables: ["Cloud architecture", "DevOps and reliability", "System integration"] },
+  { number: "06", eyebrow: "Clarity", title: "Data and applied AI", slug: "ai-data-solutions", description: "Practical intelligence that connects your data, removes repetitive work and gives decision-makers a sharper view.", deliverables: ["Operational dashboards", "AI assistants", "Workflow intelligence"] },
 ] as const;
 
 export const qatarOffers = [
@@ -20,6 +20,20 @@ export const journeySteps = [
   ["03", "WhatsApp or a form captures the conversation without friction"],
   ["04", "CRM routes the lead, triggers follow-up and preserves context"],
   ["05", "A live dashboard shows what is working and where to act next"],
+] as const;
+
+export const projects = [
+  { name: "Ultrasound.ai", slug: "ultrasound-ai", category: "AI · Healthcare", wordmark: "ultrasound.ai", theme: "coral", url: "https://ultrasound.ai/", description: "An AI-supported ultrasound platform applying machine learning to early pregnancy prediction.", useCase: "Help clinical teams assess scans sooner and support timely care decisions." },
+  { name: "Quri", slug: "quri", category: "Hospitality · Commerce", wordmark: "quri", theme: "blue", url: "https://quri.co/", description: "A mobile-friendly dining experience for QR ordering, payment and loyalty, connected to restaurant POS systems.", useCase: "Give guests a faster way to browse and pay while reducing front-of-house friction." },
+  { name: "Imateam", slug: "imateam", category: "Mobile · Community", wordmark: "imateam", theme: "pink", url: "https://imateam.us/", description: "A social platform for players to connect, collaborate and manage their profiles.", useCase: "Make it easier for people to find teammates and build sports communities." },
+  { name: "Healing Trauma", slug: "healing-trauma", category: "Healthcare · Research", wordmark: "healing trauma", theme: "mint", url: "https://healingtrauma.co.kr/", description: "A research platform for licensed clinicians and researchers studying trauma.", useCase: "Support specialist knowledge sharing and research workflows in a sensitive field." },
+  { name: "MUVN", slug: "muvn", category: "Mobile · Logistics", wordmark: "MUVN", theme: "yellow", url: "https://muvn.de/en/app", description: "A two-sided transport marketplace matching people who need bulky goods moved with drivers who have spare capacity on planned trips.", useCase: "Make long-distance delivery more accessible while helping drivers earn from unused vehicle space; includes route matching, tracking and transport protection." },
+] as const;
+
+export const insights = [
+  { category: "Mobile product strategy", title: "When does a business need a mobile app?", summary: "A practical way to compare a native app, a web experience and a focused mobile workflow." },
+  { category: "Qatar e-invoicing", title: "Preparing finance workflows for structured e-invoicing", summary: "Map invoice creation, approvals, records and integrations before choosing a technical approach." },
+  { category: "Digital operations", title: "Connecting leads from discovery to delivery", summary: "How websites, WhatsApp and CRM can preserve context through the customer journey." },
 ] as const;
 
 export const faqs = [
