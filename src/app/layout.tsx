@@ -4,11 +4,14 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: { default: "Sixth Lens | Web, Mobile, CRM and Cloud Technology in Qatar", template: "%s | Sixth Lens" },
-  description: siteConfig.description,
-  keywords: ["technology company Qatar", "web development Qatar", "mobile app development Qatar", "CRM implementation Qatar", "digital marketing Qatar", "cloud solutions Qatar", "Doha software company"],
+  title: { default: "Mobile App & Software Development Agency in Qatar | Sixth Lens", template: "%s | Sixth Lens Qatar" },
+  description: "Sixth Lens is a Qatar-based digital agency for mobile app development, web development, CRM, e-invoicing, cloud and AI solutions. Build connected digital products in Doha.",
+  keywords: ["mobile app development agency Qatar", "mobile application development Qatar", "software development company Qatar", "app development company Doha", "web development agency Qatar", "digital transformation Qatar", "e-invoicing solutions Qatar", "CRM implementation Qatar", "cloud solutions Qatar"],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
+  category: "technology",
+  applicationName: siteConfig.name,
+  referrer: "origin-when-cross-origin",
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     shortcut: "/icon.svg",
