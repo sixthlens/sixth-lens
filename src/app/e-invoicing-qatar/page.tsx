@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "E-Invoicing Solutions in Qatar | Sixth Lens",
+  title: { absolute: "E-Invoicing Solutions in Qatar | Sixth Lens" },
   description: "Plan structured e-invoicing workflows with Sixth Lens. Connect invoice creation, validation, archiving and finance or ERP systems for Qatar and regional requirements.",
   alternates: { canonical: "/e-invoicing-qatar/" },
   openGraph: { title: "E-Invoicing Solutions in Qatar | Sixth Lens", description: "Practical e-invoicing workflow design and integration for growing businesses.", url: "/e-invoicing-qatar/", type: "website" },
