@@ -109,3 +109,17 @@ h1,h2,h3,p { margin-top:0; }.hero h1 { margin-bottom:28px; font-family:var(--ser
 .statement p:last-child{color:#c1bfb6}
 @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:88svh;padding-top:150px;padding-bottom:100px}.hero-art{left:48%;top:165px;bottom:110px}.hero-copy{width:58vw}}
 @media(max-width:600px){.hero{display:flex;min-height:100dvh;padding:130px 20px 28px;background:#0a0b0b;color:#f1efe7}.hero:after{display:block;background:linear-gradient(0deg,rgba(10,11,11,.96) 15%,rgba(10,11,11,.2) 88%)}.hero-art{inset:0;background:#090a09}.hero-fallback{opacity:.76;object-position:58% center}.hero-copy{width:100%;padding-bottom:42px}.hero h1{font-size:clamp(46px,15vw,58px);color:#f1efe7}.hero h1 em,.hero .kicker{color:#f7d84a}.hero-summary{color:#d3d1ca}.hero-index{color:#aaa99f;border-color:rgba(255,255,255,.2)}.site-header{border-bottom-color:rgba(255,255,255,.12)}.site-header .brand-logo{filter:none}.site-header nav{color:#d3d1ca}.statement{background:#10110f}}
+
+/* Compact rhythm and lower image cost while keeping the editorial layout. */
+.section-pad{padding-top:clamp(64px,7vw,112px);padding-bottom:clamp(64px,7vw,112px)}
+.section-heading{gap:32px;margin-bottom:52px}
+.statement h2{font-size:clamp(42px,5.2vw,78px);margin-bottom:28px}
+.hero{min-height:82svh;padding-bottom:80px}
+.project-grid{gap:20px 18px}
+.project-art{aspect-ratio:2.1}
+.project-info{padding:22px 24px 26px;gap:14px}
+.project-info h3{font-size:clamp(28px,2.8vw,40px)}
+.project-card>a:hover{transform:translateY(-2px)}
+.einvoicing .text-link{display:inline-flex;align-items:center;gap:12px;padding:0 24px;border:1px solid var(--yellow);border-radius:999px;background:var(--yellow);color:var(--ink);min-height:50px;font-weight:600}
+.portfolio-cta{display:flex;justify-content:center;margin-top:42px}
+@media(max-width:700px){.section-pad{padding-top:64px;padding-bottom:64px}.section-heading{margin-bottom:36px}.hero{min-height:88svh}.project-art{aspect-ratio:1.65}.project-info{padding:20px}.portfolio-cta{margin-top:28px}}
