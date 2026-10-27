@@ -8,6 +8,7 @@ export const siteConfig = {
   phoneHref: "+97430313046",
   whatsappUrl: "https://wa.me/97430313046",
   linkedinUrl: "https://www.linkedin.com/company/sixth-lens/?viewAsMember=true",
+  calendlyUrl: "https://calendly.com/shoaibintech",
   location: "Doha, Qatar",
 } as const;
 
