@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="70" x2="1450" y2="850" gradientUnits="userSpaceOnUse"><stop stop-color="#101A35"/><stop offset="1" stop-color="#202B51"/></linearGradient>
+    <linearGradient id="scan" x1="230" y1="290" x2="730" y2="740" gradientUnits="userSpaceOnUse"><stop stop-color="#2C6684"/><stop offset=".52" stop-color="#131A30"/><stop offset="1" stop-color="#386B85"/></linearGradient>
+    <linearGradient id="wave" x1="310" y1="420" x2="730" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#B3F5EF"/><stop offset="1" stop-color="#6D9CFF"/></linearGradient>
+    <filter id="shadow" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB"><feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#070C1B" flood-opacity=".38"/></filter>
+    <clipPath id="scanclip"><rect x="177" y="270" width="610" height="480" rx="22"/></clipPath>
+  </defs>
+  <rect width="1600" height="900" rx="24" fill="url(#bg)"/>
+  <circle cx="1320" cy="140" r="290" fill="#7566D8" fill-opacity=".12"/>
+  <circle cx="116" cy="840" r="380" fill="#42D1C3" fill-opacity=".07"/>
+  <g filter="url(#shadow)">
+    <rect x="106" y="102" width="1388" height="696" rx="28" fill="#F6F7FB"/>
+    <path d="M134 102h1332a28 28 0 0 1 28 28v74H106v-74a28 28 0 0 1 28-28Z" fill="#fff"/>
+    <circle cx="150" cy="151" r="8" fill="#EB6D7A"/><circle cx="178" cy="151" r="8" fill="#F2C45B"/><circle cx="206" cy="151" r="8" fill="#65C99B"/>
+    <text x="254" y="160" fill="#17223D" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">ULTRASOUND AI</text>
+    <rect x="1200" y="130" width="245" height="42" rx="21" fill="#EFF0FA"/><circle cx="1224" cy="151" r="6" fill="#55B99A"/><text x="1242" y="157" fill="#45506B" font-family="Arial,sans-serif" font-size="14" font-weight="600">SECURE REVIEW WORKFLOW</text>
+    <text x="154" y="240" fill="#79829A" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">CLINICAL IMAGE ANALYSIS</text>
+    <g clip-path="url(#scanclip)">
+      <rect x="177" y="270" width="610" height="480" rx="22" fill="url(#scan)"/>
+      <path d="M204 344H760M204 428H760M204 512H760M204 596H760M204 680H760M300 286V734M420 286V734M540 286V734M660 286V734" stroke="#D8F2F4" stroke-opacity=".09"/>
+      <path d="M480 302C400 374 354 468 342 574C331 672 385 729 482 748C578 729 630 672 619 574C607 468 561 374 480 302Z" fill="#0A1021" fill-opacity=".47" stroke="#B3F5EF" stroke-opacity=".54" stroke-width="2"/>
+      <path d="M315 467C359 440 385 441 423 468C459 494 491 496 532 466C573 436 604 438 650 470M306 512C353 480 384 484 421 511C463 542 494 538 535 508C575 479 609 482 662 519M315 559C354 532 385 532 423 559C462 586 496 585 537 555C579 526 610 532 651 562M335 610C370 585 400 587 434 609C466 631 501 633 538 606C571 582 601 583 635 608" stroke="url(#wave)" stroke-width="5" stroke-linecap="round" stroke-opacity=".82"/>
+      <path d="M370 401C414 381 536 381 581 401M349 644C392 664 536 664 579 644" stroke="#D5FBF5" stroke-opacity=".36" stroke-width="2" stroke-dasharray="7 10"/>
+      <circle cx="480" cy="535" r="116" stroke="#F7D84A" stroke-opacity=".82" stroke-width="2" stroke-dasharray="5 8"/>
+      <rect x="205" y="293" width="166" height="30" rx="15" fill="#0C152A" fill-opacity=".72"/><text x="222" y="313" fill="#D8E6F4" font-family="Arial,sans-serif" font-size="12" font-weight="600" letter-spacing="1">ULTRASOUND IMAGE</text>
+      <rect x="204" y="700" width="555" height="50" fill="#101A2D" fill-opacity=".62"/><text x="227" y="731" fill="#D8E6F4" font-family="Arial,sans-serif" font-size="13" letter-spacing="1">AI-ASSISTED REVIEW  ·  CLINICIAN IN CONTROL</text>
+    </g>
+    <rect x="840" y="270" width="590" height="480" rx="22" fill="#fff" stroke="#E7E9F0"/>
+    <text x="884" y="321" fill="#79829A" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2">REVIEW SUMMARY</text>
+    <text x="884" y="373" fill="#17223D" font-family="Arial,sans-serif" font-size="28" font-weight="700">Decision support,</text>
+    <text x="884" y="409" fill="#17223D" font-family="Arial,sans-serif" font-size="28" font-weight="700">within the workflow.</text>
+    <rect x="884" y="446" width="502" height="96" rx="14" fill="#F2F2FA"/>
+    <circle cx="919" cy="494" r="18" fill="#E7E3FF"/><path d="m911 494 6 6 11-13" stroke="#6256B7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="954" y="486" fill="#79829A" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">AI ANALYSIS</text><text x="954" y="511" fill="#303A57" font-family="Arial,sans-serif" font-size="15" font-weight="600">Additional image-based insight</text>
+    <rect x="884" y="560" width="502" height="1" fill="#E7E9F0"/>
+    <text x="884" y="600" fill="#79829A" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1">DESIGNED FOR</text>
+    <g font-family="Arial,sans-serif" font-size="14" fill="#424D68"><circle cx="895" cy="635" r="4" fill="#6256B7"/><text x="911" y="640">Existing ultrasound systems</text><circle cx="895" cy="671" r="4" fill="#6256B7"/><text x="911" y="676">Secure clinical review</text><circle cx="895" cy="707" r="4" fill="#6256B7"/><text x="911" y="712">Clinician-led decisions</text></g>
+    <rect x="1177" y="676" width="209" height="44" rx="22" fill="#6256B7"/><text x="1202" y="704" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing=".5">SUPPORTING CARE →</text>
+  </g>
+</svg>
