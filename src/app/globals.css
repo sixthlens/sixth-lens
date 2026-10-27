@@ -87,3 +87,25 @@ h1,h2,h3,p { margin-top:0; }.hero h1 { margin-bottom:28px; font-family:var(--ser
 .principles{background:#fff}
 .work-detail>.project-art{aspect-ratio:2.2;min-height:0;border-radius:0}
 @media(max-width:700px){.project-grid{grid-template-columns:1fr;gap:24px}.project-card:nth-child(n){grid-column:auto}.project-info{padding:24px 21px 27px}.project-art{aspect-ratio:1.35}.work-detail>.project-art{aspect-ratio:1.35}}
+
+/* Give the first viewport the same image-led, editorial confidence as the work. */
+.hero{min-height:94svh;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);align-items:center;justify-content:initial;padding-top:150px;padding-bottom:112px;background:#f5f3ec;color:#10110f}
+.hero:after{display:none}
+.hero-art{inset:140px var(--page) 112px 51%;overflow:hidden;background:#090a09}
+.hero-fallback{opacity:1;object-position:center}
+.lens-canvas{display:none}
+.hero-copy{width:min(760px,53vw);padding-bottom:0}
+.hero h1{color:#10110f;font-size:clamp(64px,7.2vw,118px);line-height:.87}
+.hero .kicker{color:#756216}
+.hero h1 em{color:#8a7216}
+.hero-summary{max-width:520px;color:#45463f}
+.hero-index{color:#55564f;border-color:rgba(10,11,11,.24)}
+.site-header{border-bottom-color:rgba(10,11,11,.16)}
+.site-header nav{color:#30312d}
+.site-header nav a:hover{color:#756216}
+.site-header .brand-logo{filter:brightness(0)}
+.statement{background:#10110f;color:#f1efe7}
+.statement .kicker{color:#f7d84a}
+.statement p:last-child{color:#c1bfb6}
+@media(max-width:900px){.hero{grid-template-columns:1fr;min-height:88svh;padding-top:150px;padding-bottom:100px}.hero-art{left:48%;top:165px;bottom:110px}.hero-copy{width:58vw}}
+@media(max-width:600px){.hero{display:flex;min-height:100dvh;padding:130px 20px 28px;background:#0a0b0b;color:#f1efe7}.hero:after{display:block;background:linear-gradient(0deg,rgba(10,11,11,.96) 15%,rgba(10,11,11,.2) 88%)}.hero-art{inset:0;background:#090a09}.hero-fallback{opacity:.76;object-position:58% center}.hero-copy{width:100%;padding-bottom:42px}.hero h1{font-size:clamp(46px,15vw,58px);color:#f1efe7}.hero h1 em,.hero .kicker{color:#f7d84a}.hero-summary{color:#d3d1ca}.hero-index{color:#aaa99f;border-color:rgba(255,255,255,.2)}.site-header{border-bottom-color:rgba(255,255,255,.12)}.site-header .brand-logo{filter:none}.site-header nav{color:#d3d1ca}.statement{background:#10110f}}
