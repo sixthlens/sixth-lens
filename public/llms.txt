@@ -1,0 +1,31 @@
+# Sixth Lens
+
+> Sixth Lens is a digital technology studio based in Doha, Qatar.
+
+Sixth Lens helps organizations plan and build connected digital products and business systems. Services include web development, mobile app development, digital marketing and search visibility, CRM implementation and automation, cloud systems, and applied AI and data solutions.
+
+The studio serves businesses in Qatar and the wider region. Its work considers bilingual Arabic and English experiences, local customer journeys, WhatsApp-led communication, and operational requirements.
+
+## Services
+
+- [Web development in Qatar](https://sixthlense.com/services/web-development/)
+- [Digital marketing in Qatar](https://sixthlense.com/services/digital-marketing/)
+- [Mobile app development in Qatar](https://sixthlense.com/services/mobile-app-development/)
+- [CRM and automation in Qatar](https://sixthlense.com/services/crm-automation/)
+- [Cloud solutions in Qatar](https://sixthlense.com/services/cloud-solutions/)
+- [AI and data solutions in Qatar](https://sixthlense.com/services/ai-data-solutions/)
+- [E-invoicing solutions in Qatar](https://sixthlense.com/e-invoicing-qatar/)
+
+## Selected product work
+
+- [Ultrasound.ai](https://sixthlense.com/work/ultrasound-ai/): AI-supported ultrasound and early pregnancy prediction.
+- [Quri](https://sixthlense.com/work/quri/): QR ordering, payments, loyalty and restaurant integrations.
+- [Imateam](https://sixthlense.com/work/imateam/): social product for players and sports communities.
+- [Healing Trauma](https://sixthlense.com/work/healing-trauma/): research platform for clinicians and researchers.
+- [MUVN](https://sixthlense.com/work/muvn/): transport marketplace matching bulky-goods senders with drivers who have spare route capacity.
+
+## Contact
+
+- Website: https://sixthlense.com/
+- Email: hello@sixthlense.com
+- Location: Doha, Qatar
