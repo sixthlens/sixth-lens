@@ -52,3 +52,4 @@ h1,h2,h3,p { margin-top:0; }.hero h1 { margin-bottom:28px; font-family:var(--ser
 @media(max-width:900px){.detail-page{padding-top:145px}.detail-columns{grid-template-columns:1fr;gap:40px}.work-detail>.project-art{min-height:280px}}
 @media(max-width:600px){.detail-page{padding:120px 20px 90px}.detail-page h1{font-size:clamp(52px,16vw,78px)}.detail-page>.kicker{margin-bottom:45px}.detail-columns{margin:55px 0;padding:30px 0}.work-detail>.project-art{min-height:230px;margin-bottom:50px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.lens-canvas{display:none}.reveal{opacity:1;transform:none;transition:none}.button{transition:none}}
+@media(max-width:600px){.site-header nav{display:flex;grid-column:1/-1;order:3;width:100%;gap:19px;overflow-x:auto;padding-top:10px;white-space:nowrap;scrollbar-width:none;font-size:11px}.site-header nav::-webkit-scrollbar{display:none}.site-header nav a{flex:0 0 auto}}
