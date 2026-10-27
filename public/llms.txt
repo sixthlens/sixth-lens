@@ -16,6 +16,16 @@ The studio is based in Doha and serves businesses across Qatar, all GCC markets 
 - [AI and data solutions for Qatar, GCC and international markets](https://sixthlense.com/services/ai-data-solutions/)
 - [E-invoicing solutions for Qatar and the GCC](https://sixthlense.com/e-invoicing-qatar/)
 
+## Company and ways of working
+
+- [About Sixth Lens](https://sixthlense.com/about/)
+- [Industries served](https://sixthlense.com/industries/)
+- [Our delivery process](https://sixthlense.com/process/)
+- [Business and technical consultation](https://sixthlense.com/consulting/)
+- [Security and compliance readiness](https://sixthlense.com/security-compliance/)
+- [Custom digital solutions](https://sixthlense.com/custom-solutions/)
+- [Portfolio](https://sixthlense.com/portfolio/)
+
 ## Selected product work
 
 - [Ultrasound.ai](https://sixthlense.com/work/ultrasound-ai/): AI-supported ultrasound and early pregnancy prediction.
