@@ -4,17 +4,17 @@
 
 Sixth Lens helps organizations plan and build connected digital products and business systems. Services include web development, mobile app development, digital marketing and search visibility, CRM implementation and automation, cloud systems, and applied AI and data solutions.
 
-The studio serves businesses in Qatar and the wider region. Its work considers bilingual Arabic and English experiences, local customer journeys, WhatsApp-led communication, and operational requirements.
+The studio is based in Doha and serves businesses across Qatar, all GCC markets (Saudi Arabia, the United Arab Emirates, Bahrain, Kuwait and Oman) and international markets. Engagements can be delivered remotely or with regional context where relevant. Its work considers bilingual Arabic and English experiences, local customer journeys, WhatsApp-led communication, and operational requirements.
 
 ## Services
 
-- [Web development in Qatar](https://sixthlense.com/services/web-development/)
-- [Digital marketing in Qatar](https://sixthlense.com/services/digital-marketing/)
-- [Mobile app development in Qatar](https://sixthlense.com/services/mobile-app-development/)
-- [CRM and automation in Qatar](https://sixthlense.com/services/crm-automation/)
-- [Cloud solutions in Qatar](https://sixthlense.com/services/cloud-solutions/)
-- [AI and data solutions in Qatar](https://sixthlense.com/services/ai-data-solutions/)
-- [E-invoicing solutions in Qatar](https://sixthlense.com/e-invoicing-qatar/)
+- [Web development for Qatar, GCC and international markets](https://sixthlense.com/services/web-development/)
+- [Digital marketing for Qatar, GCC and international markets](https://sixthlense.com/services/digital-marketing/)
+- [Mobile app development for Qatar, GCC and international markets](https://sixthlense.com/services/mobile-app-development/)
+- [CRM and automation for Qatar, GCC and international markets](https://sixthlense.com/services/crm-automation/)
+- [Cloud solutions for Qatar, GCC and international markets](https://sixthlense.com/services/cloud-solutions/)
+- [AI and data solutions for Qatar, GCC and international markets](https://sixthlense.com/services/ai-data-solutions/)
+- [E-invoicing solutions for Qatar and the GCC](https://sixthlense.com/e-invoicing-qatar/)
 
 ## Selected product work
 
@@ -28,4 +28,5 @@ The studio serves businesses in Qatar and the wider region. Its work considers b
 
 - Website: https://sixthlense.com/
 - Email: hello@sixthlense.com
-- Location: Doha, Qatar
+- Base: Doha, Qatar
+- Service markets: Qatar, GCC and international
