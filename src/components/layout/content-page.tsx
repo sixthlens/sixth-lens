@@ -3,7 +3,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { serviceAreas, siteConfig } from "@/config/site";
 
-type ContentSection = { title: string; body: string; points?: string[] };
+type ContentSection = { id?: string; title: string; body: string; points?: string[] };
 type ContentPageProps = { kicker: string; title: string; accent: string; lead: string; sections: ContentSection[]; serviceName?: string; path?: string };
 
 export function ContentPage({ kicker, title, accent, lead, sections, serviceName, path }: ContentPageProps) {
@@ -24,7 +24,7 @@ export function ContentPage({ kicker, title, accent, lead, sections, serviceName
       <h1>{title}<br/><em>{accent}</em></h1>
       <p className="detail-lead">{lead}</p>
       <div className="content-page-grid">
-        {sections.map((section) => <section key={section.title}>
+        {sections.map((section, index) => <section id={section.id ?? `section-${index + 1}`} key={section.title}>
           <h2>{section.title}</h2>
           <p>{section.body}</p>
           {section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
