@@ -53,3 +53,37 @@ h1,h2,h3,p { margin-top:0; }.hero h1 { margin-bottom:28px; font-family:var(--ser
 @media(max-width:600px){.detail-page{padding:120px 20px 90px}.detail-page h1{font-size:clamp(52px,16vw,78px)}.detail-page>.kicker{margin-bottom:45px}.detail-columns{margin:55px 0;padding:30px 0}.work-detail>.project-art{min-height:230px;margin-bottom:50px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.lens-canvas{display:none}.reveal{opacity:1;transform:none;transition:none}.button{transition:none}}
 @media(max-width:600px){.site-header nav{display:flex;grid-column:1/-1;order:3;width:100%;gap:19px;overflow-x:auto;padding-top:10px;white-space:nowrap;scrollbar-width:none;font-size:11px}.site-header nav::-webkit-scrollbar{display:none}.site-header nav a{flex:0 0 auto}}
+
+/* Image-led work and a warmer, more varied section rhythm. */
+.portfolio{background:#f1efe7;color:#0a0b0b}
+.portfolio .section-heading .kicker,.portfolio .project-category{color:#756216}
+.portfolio .section-heading p:last-child{color:#56574f}
+.project-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:26px 22px}
+.project-card:nth-child(5n+1){grid-column:span 7}
+.project-card:nth-child(5n+2){grid-column:span 5}
+.project-card:nth-child(5n+3){grid-column:span 5}
+.project-card:nth-child(5n+4){grid-column:span 7}
+.project-card:nth-child(5n){grid-column:span 12}
+.project-card>a{border:0;border-radius:0;background:#fff;color:#10110f}
+.project-card>a:hover{border-color:transparent;box-shadow:0 20px 45px rgba(22,20,12,.12)}
+.project-art{position:relative;display:block;min-height:0;aspect-ratio:1.72;overflow:hidden;background:#e6e1d5}
+.project-art:before,.project-art:after,.project-art-label,.project-art-orbit{display:none}
+.project-art img{object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.project-card>a:hover .project-art img{transform:scale(1.035)}
+.project-info{padding:30px 32px 34px}
+.project-info h3{font-size:clamp(32px,3.3vw,48px)}
+.project-arrow{color:#756216}
+.project-info>p,.project-info>small{color:#55564f}
+.project-info>small{border-color:#dedbd2}
+.project-info>small strong{color:#272821}
+.case-link{color:#756216}
+.lenses{background:#e9e6dc;color:#10110f}
+.lenses .section-heading p:last-child,.lens-content p,.lens-number span{color:#57584f}
+.lenses .lens-list{border-color:rgba(10,11,11,.26)}
+.lenses .lens-row article{border-color:rgba(10,11,11,.2)}
+.lenses .lens-row article:hover{background:rgba(247,216,74,.15)}
+.lenses .lens-number,.lenses .service-detail-link{color:#756216}
+.lenses .lens-row li{border-color:rgba(10,11,11,.17)}
+.principles{background:#fff}
+.work-detail>.project-art{aspect-ratio:2.2;min-height:0;border-radius:0}
+@media(max-width:700px){.project-grid{grid-template-columns:1fr;gap:24px}.project-card:nth-child(n){grid-column:auto}.project-info{padding:24px 21px 27px}.project-art{aspect-ratio:1.35}.work-detail>.project-art{aspect-ratio:1.35}}
