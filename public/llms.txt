@@ -2,6 +2,8 @@
 
 > Sixth Lens is a digital technology studio based in Doha, Qatar.
 
+Arabic-language AI/search summary: https://sixthlense.com/llms-ar.txt
+
 Sixth Lens helps organizations plan and build connected digital products and business systems. Services include web development, mobile app development, digital marketing and search visibility, CRM implementation and automation, cloud systems, and applied AI and data solutions.
 
 The studio is based in Doha and serves businesses across Qatar, all GCC markets (Saudi Arabia, the United Arab Emirates, Bahrain, Kuwait and Oman) and international markets. Engagements can be delivered remotely or with regional context where relevant. Its work considers bilingual Arabic and English experiences, local customer journeys, WhatsApp-led communication, and operational requirements.
@@ -14,7 +16,10 @@ The studio is based in Doha and serves businesses across Qatar, all GCC markets 
 - [CRM and automation for Qatar, GCC and international markets](https://sixthlense.com/services/crm-automation/)
 - [Cloud solutions for Qatar, GCC and international markets](https://sixthlense.com/services/cloud-solutions/)
 - [AI and data solutions for Qatar, GCC and international markets](https://sixthlense.com/services/ai-data-solutions/)
-- [E-invoicing solutions for Qatar and the GCC](https://sixthlense.com/e-invoicing-qatar/)
+- [E-invoicing, Peppol and ERP integration planning for Qatar, the GCC and international markets](https://sixthlense.com/e-invoicing-qatar/): workflow planning for structured e-invoices, Peppol, UBL XML, Peppol BIS Billing 3.0 / EN 16931 where applicable, accounting and ERP integrations, archiving, and UAE mandate readiness. Sixth Lens provides systems and integration planning; it does not claim Peppol Access Point accreditation or provide tax advice.
+- [Startup product development](https://sixthlense.com/startups/): product validation, roadmap, MVP planning and scalable digital foundations for early-stage and growing teams.
+- [MVP development](https://sixthlense.com/mvp-development/): discovery, prioritization, design and engineering for a focused first release that can be tested with real users.
+- [Hire a product and software development team](https://sixthlense.com/hire-a-team/): coordinated product, UX/UI design, engineering, cloud and QA capacity aligned to a delivery goal.
 
 ## Company and ways of working
 
@@ -25,6 +30,26 @@ The studio is based in Doha and serves businesses across Qatar, all GCC markets 
 - [Security and compliance readiness](https://sixthlense.com/security-compliance/)
 - [Custom digital solutions](https://sixthlense.com/custom-solutions/)
 - [Portfolio](https://sixthlense.com/portfolio/)
+
+## Arabic-language website
+
+The Arabic website is available at https://sixthlense.com/ar/ and uses Arabic page copy, right-to-left layout, localized metadata, and separate crawlable URLs. Arabic pages cover services, industries, startups, MVP development, hiring a product team, e-invoicing, company information, delivery process, consultation, security, custom solutions and project work.
+
+- [الصفحة الرئيسية بالعربية](https://sixthlense.com/ar/)
+- [خدمات تطوير البرمجيات والتطبيقات](https://sixthlense.com/ar/services/)
+- [القطاعات التي نخدمها](https://sixthlense.com/ar/industries/)
+- [تطوير الشركات الناشئة](https://sixthlense.com/ar/startups/)
+- [تطوير MVP](https://sixthlense.com/ar/mvp-development/)
+- [استعن بفريق تطوير المنتجات](https://sixthlense.com/ar/hire-a-team/)
+- [الفوترة الإلكترونية وPEPPOL](https://sixthlense.com/ar/e-invoicing-qatar/)
+- [ملف الأعمال والمشاريع](https://sixthlense.com/ar/portfolio/)
+
+Arabic service and project pages use localized descriptions and independent canonical URLs:
+- [تطوير تطبيقات الجوال](https://sixthlense.com/ar/services/mobile-app-development/)
+- [تطوير المواقع والمنصات](https://sixthlense.com/ar/services/web-development/)
+- [أنظمة CRM والأتمتة](https://sixthlense.com/ar/services/crm-automation/)
+- [تطوير تطبيق ADGM](https://sixthlense.com/ar/work/adgm-app/)
+- [مشروع NAREB Realtist Connect](https://sixthlense.com/ar/work/nareb-realtist-connect/)
 
 ## Selected product work
 

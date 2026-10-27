@@ -4,7 +4,7 @@ export function pageMetadata(title: string, description: string, path: string): 
   return {
     title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: path, languages: { en: path, "ar-QA": `/ar${path}`, "x-default": path } },
     openGraph: { title, description, url: path, type: "website" },
   };
 }

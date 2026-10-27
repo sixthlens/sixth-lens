@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
-import "./globals.css";
+import "../globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     shortcut: "/icon.svg",
     apple: "/icon.svg",
   },
-  alternates: { canonical: "/" },
+  alternates: { canonical: "/", languages: { en: "/", "ar-QA": "/ar/", "x-default": "/" } },
   openGraph: { type: "website", locale: "en_QA", url: "/", siteName: siteConfig.name, title: "Sixth Lens | Your business, brought into focus", description: siteConfig.description, images: [{ url: "/images/sixth-lens-hero.png", width: 1536, height: 1024, alt: "The Sixth Lens connected technology system" }] },
   twitter: { card: "summary_large_image", title: "Sixth Lens | Your business, brought into focus", description: siteConfig.description, images: ["/images/sixth-lens-hero.png"] },
 };

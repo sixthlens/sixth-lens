@@ -1,0 +1,47 @@
+# سايكسث لينس
+
+> سايكسث لينس استوديو تقني مستقل في الدوحة، قطر، يقدم خدمات تطوير المنتجات الرقمية للشركات في قطر ودول مجلس التعاون الخليجي والأسواق العالمية.
+
+نساعد المؤسسات والشركات الناشئة على التخطيط وبناء المنتجات الرقمية والأنظمة التجارية المترابطة. تشمل خدماتنا تطوير تطبيقات الجوال والمواقع، التسويق الرقمي وتحسين الظهور في محركات البحث، أنظمة CRM والأتمتة، السحابة، البيانات والذكاء الاصطناعي، تطوير MVP، الاستشارات التقنية، وتكامل الفوترة الإلكترونية وPEPPOL.
+
+## اللغات والأسواق
+
+الموقع العربي متاح باتجاه الكتابة من اليمين إلى اليسار على https://sixthlense.com/ar/، ويخدم الفرق في قطر والسعودية والإمارات والبحرين والكويت وعُمان والأسواق العالمية.
+
+## الخدمات والصفحات
+
+- [تطوير المواقع والمنصات](https://sixthlense.com/ar/services/web-development/)
+- [التسويق الرقمي وتحسين محركات البحث](https://sixthlense.com/ar/services/digital-marketing/)
+- [تطوير تطبيقات الجوال](https://sixthlense.com/ar/services/mobile-app-development/)
+- [أنظمة CRM والأتمتة](https://sixthlense.com/ar/services/crm-automation/)
+- [حلول السحابة](https://sixthlense.com/ar/services/cloud-solutions/)
+- [البيانات والذكاء الاصطناعي](https://sixthlense.com/ar/services/ai-data-solutions/)
+- [حلول الشركات الناشئة](https://sixthlense.com/ar/startups/)
+- [تطوير MVP والمنتج الأولي](https://sixthlense.com/ar/mvp-development/)
+- [استعن بفريق تطوير المنتجات والبرمجيات](https://sixthlense.com/ar/hire-a-team/)
+- [تطوير البرمجيات المخصصة](https://sixthlense.com/ar/custom-solutions/)
+- [استشارات الأعمال والتقنية](https://sixthlense.com/ar/consulting/)
+- [الأمن والامتثال](https://sixthlense.com/ar/security-compliance/)
+- [منهجية تطوير وتسليم المنتجات](https://sixthlense.com/ar/process/)
+- [حلول الفوترة الإلكترونية وPEPPOL](https://sixthlense.com/ar/e-invoicing-qatar/): تخطيط سير العمل والتكامل مع UBL XML وPeppol BIS Billing 3.0 وEN 16931 عند انطباقها. تقدم سايكسث لينس تخطيط الأنظمة والتكامل ولا تدعي اعتماد نقطة وصول PEPPOL أو تقديم استشارات ضريبية.
+- [القطاعات](https://sixthlense.com/ar/industries/): الأغذية والضيافة، الخدمات اللوجستية، الرعاية الصحية، العقارات والمرافق، التجارة والفعاليات.
+- [ملف الأعمال](https://sixthlense.com/ar/portfolio/)
+
+## مشاريع رقمية مختارة
+
+- [Ultrasound.ai](https://sixthlense.com/ar/work/ultrasound-ai/): منصة مساندة للتصوير بالموجات فوق الصوتية والتنبؤ المبكر بالحمل.
+- [Quri](https://sixthlense.com/ar/work/quri/): الطلب والدفع وبرامج الولاء للمطاعم والتكامل مع نقاط البيع.
+- [Imateam](https://sixthlense.com/ar/work/imateam/): منصة اجتماعية للاعبين والمجتمعات الرياضية.
+- [Healing Trauma](https://sixthlense.com/ar/work/healing-trauma/): منصة بحثية للأطباء والباحثين.
+- [MUVN](https://sixthlense.com/ar/work/muvn/): سوق نقل يطابق طلبات نقل الأغراض الكبيرة مع سعة الرحلات المتاحة.
+- [ADGM App](https://sixthlense.com/ar/work/adgm-app/): خدمات وأدوات أعمال وتواصل وفعاليات لمنطقة سوق أبوظبي العالمي.
+- [NAREB Realtist Connect](https://sixthlense.com/ar/work/nareb-realtist-connect/): شبكة مهنية وفعاليات وتعلم وإحالات للعاملين في العقارات.
+
+## التواصل
+
+- الموقع: https://sixthlense.com/ar/
+- البريد الإلكتروني: hello@sixthlense.com
+- الهاتف: +974 3031 3046
+- LinkedIn: https://www.linkedin.com/company/sixth-lens/?viewAsMember=true
+- حجز اجتماع: https://calendly.com/shoaibintech
+- مقر الفريق: الدوحة، قطر

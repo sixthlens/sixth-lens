@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = projects.find((item) => item.slug === slug);
   if (!project) return {};
   const title = `${project.name} — Digital Product Case Study`;
-  return { title, description: `${project.description} Business use case: ${project.useCase}`, alternates: { canonical: `/work/${slug}/` }, openGraph: { title, description: `${project.description} ${project.useCase}`, url: `/work/${slug}/`, type: "article" } };
+  return { title, description: `${project.description} Business use case: ${project.useCase}`, alternates: { canonical: `/work/${slug}/`, languages: { en: `/work/${slug}/`, "ar-QA": `/ar/work/${slug}/`, "x-default": `/work/${slug}/` } }, openGraph: { title, description: `${project.description} ${project.useCase}`, url: `/work/${slug}/`, type: "article" } };
 }
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {

@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!service) return {};
   const title = `${service.title} in Qatar, GCC & beyond`;
   const description = `${service.description} Sixth Lens delivers ${service.title.toLowerCase()} for teams in Qatar, across the GCC and internationally.`;
-  return { title, description, alternates: { canonical: `/services/${slug}/` }, openGraph: { title, description, url: `/services/${slug}/`, type: "website" } };
+  return { title, description, alternates: { canonical: `/services/${slug}/`, languages: { en: `/services/${slug}/`, "ar-QA": `/ar/services/${slug}/`, "x-default": `/services/${slug}/` } }, openGraph: { title, description, url: `/services/${slug}/`, type: "website" } };
 }
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
