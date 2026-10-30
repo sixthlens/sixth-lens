@@ -58,6 +58,8 @@ Arabic service and project pages use localized descriptions and independent cano
 - [Imateam](https://sixthlense.com/work/imateam/): social product for players and sports communities.
 - [Healing Trauma](https://sixthlense.com/work/healing-trauma/): research platform for clinicians and researchers.
 - [MUVN](https://sixthlense.com/work/muvn/): transport marketplace matching bulky-goods senders with drivers who have spare route capacity.
+- [ADGM App](https://sixthlense.com/work/adgm-app/): business services, tools, communication and events for the Abu Dhabi Global Market community.
+- [NAREB Realtist Connect](https://sixthlense.com/work/nareb-realtist-connect/): professional networking, events, learning and referrals for real estate professionals.
 
 ## Contact
 

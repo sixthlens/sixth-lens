@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178 40" role="img" aria-labelledby="title desc">
   <title id="title">Sixth Lens</title>
   <desc id="desc">Sixth Lens optical mark and wordmark</desc>
-  <g transform="translate(20 20)" fill="none" stroke="#f7d84a" stroke-width="2.4" stroke-linecap="round">
-    <path d="M-12 0h24"/>
-    <path d="M-10.4-6l20.8 12"/>
-    <path d="M-6-10.4L6 10.4"/>
-    <path d="M0-12v24"/>
-    <path d="M6-10.4L-6 10.4"/>
-    <path d="M10.4-6l-20.8 12"/>
-    <circle r="4.2" fill="#0a0b0b"/>
+  <g transform="translate(20 20)" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round">
+    <path d="M-13 0h26"/>
+    <path d="M-11.26-6.5l22.52 13"/>
+    <path d="M-6.5-11.26L6.5 11.26"/>
+    <path d="M0-13v26"/>
+    <path d="M6.5-11.26L-6.5 11.26"/>
+    <path d="M11.26-6.5l-22.52 13"/>
+    <circle r="5.2" fill="#EC3F29" stroke="#ffffff" stroke-width="2.4"/>
   </g>
-  <text x="46" y="25.5" fill="#f1efe7" font-family="Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="-.45">sixth lens</text>
+  <text x="44" y="26" fill="#ffffff" font-family="Bricolage Grotesque, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="-.5">Sixth Lens</text>
 </svg>

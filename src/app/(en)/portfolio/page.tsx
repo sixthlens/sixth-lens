@@ -1,13 +1,83 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SiteHeader } from "@/components/layout/site-header";
+import { Shell } from "@/components/home-v2/shell";
 import { pageMetadata } from "@/config/seo";
+import { siteConfig } from "@/config/site";
 import { projects } from "@/data/home";
 
-export const metadata: Metadata = pageMetadata("Selected Work | Digital Products & Business Solutions", "Explore digital products and platforms across healthtech, hospitality, sports communities, research and logistics in the Sixth Lens portfolio.", "/portfolio/");
+export const metadata: Metadata = pageMetadata(
+  "Our Work | Mobile Apps, Web Platforms & Digital Products",
+  "Selected Sixth Lens work: mobile apps, web platforms and digital products across healthtech, hospitality, sports communities, research and logistics.",
+  "/portfolio/",
+);
 
 export default function PortfolioPage() {
-  return <><SiteHeader/><main className="portfolio portfolio-index section-pad" id="top"><div className="section-heading"><p className="kicker">Selected work</p><h1 id="portfolio-title">Digital products<br/>with a job to do.</h1><p>Product experiences built around a clear customer need and business use case.</p></div><div className="project-grid">{projects.map((project,index)=><article className={`project-card project-card-${index+1}`} key={project.slug}><Link href={`/work/${project.slug}/`} aria-label={`Read the ${project.name} case study`}><div className={`project-art project-art-${project.theme}`}><Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 40vw" /></div><div className="project-info"><div><p className="project-category">{project.category}</p><h2>{project.name}</h2></div><span className="project-arrow" aria-hidden="true">↗</span><p>{project.description}</p><small><strong>Business use case</strong>{project.useCase}</small><span className="case-link">Read case study ↗</span></div></Link></article>)}</div><p className="portfolio-note">These selected examples illustrate different product needs and sectors. Ask us about the right approach for your organization.</p></main><SiteFooter/></>;
+  return (
+    <Shell language="en">
+      <section className="page-hero">
+        <span className="ring" aria-hidden="true" />
+        <div className="wrap">
+          <nav className="crumbs">
+            <Link href="/">Home</Link>
+            <span>Work</span>
+          </nav>
+          <span className="pill">Selected work</span>
+          <h1>
+            Products with a <em>job to do.</em>
+          </h1>
+          <p className="lead">
+            From Doha to the GCC and international markets, we build digital products around a
+            clear customer need and a measurable business outcome. Here is a selection across
+            healthtech, hospitality, sports communities, research and logistics.
+          </p>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="pf-grid">
+            {projects.map((project) => (
+              <Link className="pf-card" href={`/work/${project.slug}/`} key={project.slug}>
+                <div className="pf-art">
+                  <img src={project.image} alt={project.imageAlt} loading="lazy" />
+                </div>
+                <div className="pf-body">
+                  <span className="pf-cat">{project.category}</span>
+                  <h3>
+                    {project.name}
+                    <span aria-hidden="true">↗</span>
+                  </h3>
+                  <p>{project.useCase}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec tight">
+        <div className="wrap">
+          <div className="cta-band" style={{ gridTemplateColumns: "1fr" }}>
+            <span className="ring" aria-hidden="true" />
+            <div style={{ display: "flex", flexDirection: "column", gap: 16, position: "relative" }}>
+              <span className="pill">Start here</span>
+              <h2 className="h2">Have a product with a job to do?</h2>
+              <p className="body" style={{ color: "rgba(255,255,255,.85)" }}>
+                Tell us the outcome you want. We will map the shortest credible path from idea
+                to a working product your customers and teams can rely on.
+              </p>
+              <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+                <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">
+                  Book a 30-min call ↗
+                </a>
+                <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">
+                  WhatsApp us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Shell>
+  );
 }

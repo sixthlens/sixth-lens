@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     apple: "/icon.svg",
   },
   alternates: { canonical: "/", languages: { en: "/", "ar-QA": "/ar/", "x-default": "/" } },
-  openGraph: { type: "website", locale: "en_QA", url: "/", siteName: siteConfig.name, title: "Sixth Lens | Your business, brought into focus", description: siteConfig.description, images: [{ url: "/images/sixth-lens-hero.png", width: 1536, height: 1024, alt: "The Sixth Lens connected technology system" }] },
-  twitter: { card: "summary_large_image", title: "Sixth Lens | Your business, brought into focus", description: siteConfig.description, images: ["/images/sixth-lens-hero.png"] },
+  openGraph: { type: "website", locale: "en_QA", url: "/", siteName: siteConfig.name, title: "Sixth Lens | Your business, brought into focus", description: siteConfig.description, images: [{ url: "/images/v2/doha-west-bay-skyline-qatar.webp", width: 1280, height: 853, alt: "Sixth Lens, technology studio in Doha, Qatar" }] },
+  twitter: { card: "summary_large_image", title: "Sixth Lens | Your business, brought into focus", description: siteConfig.description, images: ["/images/v2/doha-west-bay-skyline-qatar.webp"] },
 };
 
-export const viewport: Viewport = { themeColor: "#0a0b0b", colorScheme: "dark", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#EC3F29", colorScheme: "light", width: "device-width", initialScale: 1 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="en"><body>{children}</body></html>;

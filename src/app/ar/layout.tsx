@@ -13,5 +13,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#0a0b0b", width: "device-width", initialScale: 1 };
 
 export default function ArabicRootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="ar" dir="rtl" translate="no"><body><div className="arabic-site" lang="ar" dir="rtl" translate="no">{children}</div></body></html>;
+  return <html lang="ar" dir="rtl" translate="no"><body>{children}</body></html>;
 }

@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
+import { Shell } from "@/components/home-v2/shell";
 import { siteConfig } from "@/config/site";
 import { arabicMetadata } from "@/config/arabic-seo";
 import { arabicPages, arabicProjectDetails } from "@/data/arabic";
@@ -31,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = arabicPages[slug];
   if (!page) return {};
-  return arabicMetadata(`${page.title} ${page.accent} | سايكسث لينس`, page.lead, `/${slug}/`, [...(pageKeywords[slug] || []), "خدمات تقنية قطر", "تطوير المنتجات الرقمية الخليج", "digital product development Qatar", "software development GCC"]);
+  return arabicMetadata(`${page.title} ${page.accent} | سِكْسث لينس`, page.lead, `/${slug}/`, [...(pageKeywords[slug] || []), "خدمات تقنية قطر", "تطوير المنتجات الرقمية الخليج", "digital product development Qatar", "software development GCC"]);
 }
 
 export default async function ArabicContentRoute({ params }: Props) {
@@ -40,11 +38,98 @@ export default async function ArabicContentRoute({ params }: Props) {
   if (!page) notFound();
   const schema = { "@context": "https://schema.org", "@type": slug === "portfolio" ? "CollectionPage" : "WebPage", name: `${page.title} ${page.accent}`, description: page.lead, inLanguage: "ar", url: `${siteConfig.url}/ar/${slug}/`, isPartOf: { "@type": "WebSite", name: siteConfig.name, url: siteConfig.url } };
 
-  if (slug === "portfolio") return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}/><SiteHeader language="ar"/><main className="portfolio portfolio-index section-pad" id="top"><div className="section-heading"><p className="kicker">أعمال مختارة</p><h1 id="portfolio-title">منتجات رقمية<br/>لها هدف واضح.</h1><p>تجارب رقمية مصممة لتلبية احتياجات العملاء والأعمال.</p></div><div className="project-grid">{projects.map((project,index) => { const detail=arabicProjectDetails[project.slug]; return <article className={`project-card project-card-${index+1}`} key={project.slug}><Link href={`/ar/work/${project.slug}/`} aria-label={`دراسة مشروع ${project.name}`}><div className={`project-art project-art-${project.theme}`}><Image src={project.image} alt={detail.imageAlt} fill sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 40vw"/></div><div className="project-info"><div><p className="project-category">{detail.category}</p><h2>{project.name}</h2></div><span className="project-arrow" aria-hidden="true">↗</span><p>{detail.description}</p><small><strong>حالة الاستخدام</strong>{detail.useCase}</small><span className="case-link">اقرأ عن المشروع ↗</span></div></Link></article>; })}</div><p className="portfolio-note">أمثلة لمنتجات رقمية في قطاعات واحتياجات مختلفة. تواصل معنا لمناقشة الحل المناسب لمؤسستك.</p></main><SiteFooter language="ar"/></>;
+  if (slug === "portfolio") {
+    return (
+      <Shell language="ar">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <section className="page-hero">
+          <span className="ring" aria-hidden="true" />
+          <div className="wrap">
+            <nav className="crumbs"><Link href="/ar/">الرئيسية</Link><span>الأعمال</span></nav>
+            <span className="pill">أعمال مختارة</span>
+            <h1>{page.title} <em>{page.accent}</em></h1>
+            <p className="lead">{page.lead}</p>
+            <div className="hero-ctas">
+              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة ↗</a>
+              <Link className="btn outline" href="/ar/#contact">أرسل استفسارك</Link>
+            </div>
+          </div>
+        </section>
+        <section className="sec"><div className="wrap">
+          <div className="pf-grid">
+            {projects.map((project) => {
+              const detail = arabicProjectDetails[project.slug];
+              return (
+                <Link className="pf-card" href={`/ar/work/${project.slug}/`} key={project.slug}>
+                  <div className="pf-art"><img src={project.image} alt={detail.imageAlt} loading="lazy" /></div>
+                  <div className="pf-body">
+                    <span className="pf-cat">{detail.category}</span>
+                    <h3>{project.name}<span aria-hidden="true">↗</span></h3>
+                    <p>{detail.useCase}</p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div></section>
+        <section className="sec tight"><div className="wrap">
+          <div className="cta-band" style={{ gridTemplateColumns: "1fr" }}>
+            <span className="ring" aria-hidden="true" />
+            <div style={{ display: "flex", flexDirection: "column", gap: 16, position: "relative" }}>
+              <span className="pill">ابدأ من هنا</span>
+              <h2 className="h2">لديك منتج بهدف واضح؟</h2>
+              <p className="body" style={{ color: "rgba(255,255,255,.85)" }}>أخبرنا بالنتيجة التي تريد تحقيقها، وسنرسم أقصر مسار واقعي من الفكرة إلى منتج يعتمد عليه عملاؤك وفرقك.</p>
+              <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+                <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة 30 دقيقة ↗</a>
+                <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">واتساب</a>
+              </div>
+            </div>
+          </div>
+        </div></section>
+      </Shell>
+    );
+  }
 
   const serviceLinks = slug === "services" ? [
     ["web-development", "تطوير المواقع والمنصات"], ["digital-marketing", "التسويق الرقمي"], ["mobile-app-development", "تطبيقات الجوال"], ["crm-automation", "CRM والأتمتة"], ["cloud-solutions", "حلول السحابة"], ["ai-data-solutions", "البيانات والذكاء الاصطناعي"],
-  ] : [];
+  ] as const : [];
 
-  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}/><SiteHeader language="ar"/><main className="detail-page content-page" id="top"><p className="kicker">{page.kicker}</p><h1>{page.title}<br/><em>{page.accent}</em></h1><p className="detail-lead">{page.lead}</p><div className="content-page-grid">{page.sections.map((section,index) => <section id={section.id ?? `section-${index+1}`} key={section.title}><h2>{section.title}</h2><p>{section.body}</p>{section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}</section>)}</div>{serviceLinks.length > 0 && <nav className="arabic-service-links" aria-label="الخدمات التفصيلية">{serviceLinks.map(([path,label]) => <Link key={path} href={`/ar/services/${path}/`}>{label} ↗</Link>)}</nav>}<div className="content-page-cta"><a className="button" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز استشارة <span aria-hidden="true">↗</span></a><Link className="text-link" href="/ar/#contact">أرسل استفسارك <span aria-hidden="true">↗</span></Link></div></main><SiteFooter language="ar"/></>;
+  return (
+    <Shell language="ar">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <section className="page-hero">
+        <span className="ring" aria-hidden="true" />
+        <div className="wrap">
+          <nav className="crumbs"><Link href="/ar/">الرئيسية</Link><span>{page.title}</span></nav>
+          <span className="pill">{page.kicker}</span>
+          <h1>{page.title} <em>{page.accent}</em></h1>
+          <p className="lead">{page.lead}</p>
+          <div className="hero-ctas">
+            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة ↗</a>
+            <Link className="btn outline" href="/ar/#contact">أرسل استفسارك</Link>
+          </div>
+        </div>
+      </section>
+      <section className="sec"><div className="wrap">
+        <div className="content-grid">
+          {page.sections.map((section, index) => (
+            <section className="content-sec" id={section.id ?? `section-${index + 1}`} key={section.title}>
+              <h2>{section.title}</h2>
+              <p>{section.body}</p>
+              {section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
+            </section>
+          ))}
+        </div>
+        {serviceLinks.length > 0 && (
+          <div className="content-cta">
+            {serviceLinks.map(([path, label]) => <Link className="btn navy" key={path} href={`/ar/services/${path}/`}>{label} ↗</Link>)}
+          </div>
+        )}
+        <div className="content-cta">
+          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز استشارة ↗</a>
+          <Link className="btn navy" href="/ar/services/">استكشف جميع الخدمات</Link>
+        </div>
+      </div></section>
+    </Shell>
+  );
 }

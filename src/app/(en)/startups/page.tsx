@@ -3,17 +3,17 @@ import { ContentPage } from "@/components/layout/content-page";
 
 export const metadata: Metadata = {
   title: { absolute: "Startup Product Development & Technology Partner | Sixth Lens" },
-  description: "A technology partner for startups in Qatar, the GCC and international markets. Validate ideas, shape a product roadmap and build a scalable digital foundation.",
+  description: "Startup technology partner in Qatar and the GCC. Validate ideas, plan your product roadmap and build web and mobile software that grows with your business.",
   keywords: ["startup technology partner Qatar", "startup software development GCC", "startup product development", "startup app development", "technology partner for startups", "startup MVP Qatar"],
   alternates: { canonical: "/startups/" },
-  openGraph: { title: "Startup Product Development | Sixth Lens", description: "Validate, plan and build digital products with a startup technology partner serving Qatar, the GCC and international markets.", url: "/startups/", type: "website" },
+  openGraph: { title: "Startup Product Development | Sixth Lens", description: "Validate, plan and build digital products with a startup technology partner in Qatar, the GCC and international markets.", url: "/startups/", type: "website" },
 };
 
 export default function StartupsPage() {
-  return <ContentPage kicker="For startups · Qatar, GCC & international" title="Build the right" accent="thing, at the right time." lead="From early idea to growing product, Sixth Lens helps startup teams make clear product and technology decisions, test assumptions and build a foundation that can evolve with the business." serviceName="Startup product strategy and development" path="/startups/" sections={[
-    { title: "Get from idea to a useful first release", body: "Clarify the problem, target users and commercial assumptions before committing to a large build. We help founders define the smallest useful product and what evidence will guide the next investment.", points: ["Product discovery and validation planning", "Customer journeys and feature prioritization", "Prototype and MVP scope"] },
-    { title: "Build a foundation that can grow", body: "Choose a practical architecture and delivery approach for the product stage you are in. Ship the core experience, learn from usage and extend it as customers and operations develop.", points: ["Web and mobile product development", "Cloud, integrations and analytics", "Security, privacy and release planning"] },
-    { title: "Work with one connected team", body: "Bring product thinking, design and engineering into the same conversation. We can work alongside founders, internal teams and specialist partners across Qatar, the GCC and international markets." },
-    { title: "Keep decisions tied to outcomes", body: "Agree on the user problem and business signals first, then use them to guide scope, milestones and future improvements. This helps teams focus effort on adoption and value rather than feature count." },
+  return <ContentPage kicker="For startups · Qatar, GCC & international" title="Build the right" accent="thing, at the right time." lead="Early products fail more often from building the wrong thing well than from building the right thing badly. Sixth Lens helps founders in Qatar and the GCC make clear product and technology calls, test assumptions cheaply and build a foundation that grows with the business." serviceName="Startup product strategy and development" path="/startups/" sections={[
+    { title: "Get from idea to a useful first release", body: "We clarify the problem, the target users and the commercial assumptions before a big build eats your runway. Together we define the smallest useful product. We also agree what evidence will tell you to keep going.", points: ["Discovery and validation planning", "Customer journeys and feature priorities", "Prototype and MVP scope"] },
+    { title: "Build a foundation that can grow", body: "We match the architecture and delivery approach to your stage: lean enough to ship now, solid enough to survive your first wave of traction. You launch the core experience, learn from real usage and extend as customers arrive.", points: ["Web and mobile product development", "Cloud, integrations and analytics", "Security, privacy and release planning"] },
+    { title: "Work with one connected team", body: "Product, design and engineering sit in the same conversation. You don't have to stitch freelancers together or translate between them. We work alongside founders, in-house teams and specialist partners in Qatar, the GCC and international markets." },
+    { title: "Keep decisions tied to outcomes", body: "First we agree on the user problem and the business signals that matter. Those signals then drive scope, milestones and every later improvement. The team stays focused on adoption and value, not on feature count." },
   ]} />;
 }

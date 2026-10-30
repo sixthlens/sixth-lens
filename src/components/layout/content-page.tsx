@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SiteHeader } from "@/components/layout/site-header";
+import { Shell } from "@/components/home-v2/shell";
 import { serviceAreas, siteConfig } from "@/config/site";
 
 type ContentSection = { id?: string; title: string; body: string; points?: string[] };
@@ -16,25 +15,37 @@ export function ContentPage({ kicker, title, accent, lead, sections, serviceName
     url: `${siteConfig.url}${path}`,
   } : null;
 
-  return <>
-    {schema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />}
-    <SiteHeader />
-    <main className="detail-page content-page" id="top">
-      <p className="kicker">{kicker}</p>
-      <h1>{title}<br/><em>{accent}</em></h1>
-      <p className="detail-lead">{lead}</p>
-      <div className="content-page-grid">
-        {sections.map((section, index) => <section id={section.id ?? `section-${index + 1}`} key={section.title}>
-          <h2>{section.title}</h2>
-          <p>{section.body}</p>
-          {section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
-        </section>)}
-      </div>
-      <div className="content-page-cta">
-        <a className="button" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a consultation <span aria-hidden="true">↗</span></a>
-        <Link className="text-link" href="/#contact">Send us a project enquiry <span aria-hidden="true">↗</span></Link>
-      </div>
-    </main>
-    <SiteFooter />
-  </>;
+  return (
+    <Shell>
+      {schema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />}
+      <section className="page-hero">
+        <span className="ring" aria-hidden="true" />
+        <div className="wrap">
+          <nav className="crumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>{title}</span></nav>
+          <span className="pill">{kicker}</span>
+          <h1>{title} <em>{accent}</em></h1>
+          <p className="lead">{lead}</p>
+          <div className="hero-ctas">
+            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a consultation ↗</a>
+            <Link className="btn outline" href="/#contact">Send a project enquiry</Link>
+          </div>
+        </div>
+      </section>
+      <section className="sec"><div className="wrap">
+        <div className="content-grid">
+          {sections.map((section, index) => (
+            <section className="content-sec" id={section.id ?? `section-${index + 1}`} key={section.title}>
+              <h2>{section.title}</h2>
+              <p>{section.body}</p>
+              {section.points && <ul>{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
+            </section>
+          ))}
+        </div>
+        <div className="content-cta">
+          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a consultation ↗</a>
+          <Link className="btn navy" href="/services/">Explore all services</Link>
+        </div>
+      </div></section>
+    </Shell>
+  );
 }
