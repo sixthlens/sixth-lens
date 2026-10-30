@@ -20,7 +20,7 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: siteConfig.legalName,
   url: siteConfig.url,
-  sameAs: [siteConfig.linkedinUrl],
+  sameAs: [siteConfig.linkedinUrl, siteConfig.googleKnowledgeUrl],
   image: `${siteConfig.url}/images/sixth-lens-hero.png`,
   email: siteConfig.email,
   telephone: siteConfig.phoneHref,

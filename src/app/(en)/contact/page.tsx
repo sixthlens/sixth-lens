@@ -46,6 +46,7 @@ export default function Page() {
             <a href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer"><span className="ci-label">WhatsApp</span><span className="ci-value">Message us directly ↗</span></a>
             <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer"><span className="ci-label">Book a call</span><span className="ci-value">30-min call on Calendly ↗</span></a>
             <a href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><span className="ci-label">LinkedIn</span><span className="ci-value">Follow Sixth Lens ↗</span></a>
+            <a href={siteConfig.googleBusinessUrl} target="_blank" rel="noreferrer"><span className="ci-label">Google</span><span className="ci-value">Find us on Google Maps ↗</span></a>
             <div><span className="ci-label">Studio</span><span className="ci-value">Doha, Qatar</span><span style={{ color: "var(--grey)", fontWeight: 400, fontSize: 15 }}>Serving the GCC and clients worldwide</span></div>
           </div>
           <ContactFormV2 language="en" />

@@ -48,6 +48,7 @@ export default function Page() {
             <a href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer"><span className="ci-label">واتساب</span><span className="ci-value">راسلنا مباشرة ↗</span></a>
             <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer"><span className="ci-label">احجز اجتماعاً</span><span className="ci-value">مكالمة 30 دقيقة عبر Calendly ↗</span></a>
             <a href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><span className="ci-label">لينكد إن</span><span className="ci-value">تابع سِكْسث لينس ↗</span></a>
+            <a href={siteConfig.googleBusinessUrl} target="_blank" rel="noreferrer"><span className="ci-label">جوجل</span><span className="ci-value">اعثر علينا على خرائط جوجل ↗</span></a>
             <div><span className="ci-label">المقر</span><span className="ci-value">الدوحة، قطر</span><span style={{ color: "var(--grey)", fontWeight: 400, fontSize: 15 }}>نخدم دول الخليج وعملاء حول العالم</span></div>
           </div>
           <ContactFormV2 language="ar" />

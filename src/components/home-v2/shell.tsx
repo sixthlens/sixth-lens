@@ -16,7 +16,7 @@ const orgSchema = {
   logo: `${siteConfig.url}/images/sixth-lens-logo.svg`,
   email: siteConfig.email,
   telephone: siteConfig.phoneHref,
-  sameAs: [siteConfig.linkedinUrl],
+  sameAs: [siteConfig.linkedinUrl, siteConfig.googleKnowledgeUrl],
   address: { "@type": "PostalAddress", addressLocality: "Doha", addressCountry: "QA" },
 };
 
