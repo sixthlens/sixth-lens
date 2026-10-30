@@ -50,7 +50,6 @@ export function SiteFooterV2({ language = "en" }: { language?: Lang }) {
             <li><a href={`tel:${siteConfig.phoneHref}`}>{siteConfig.phoneDisplay}</a></li>
             <li>{t("Doha, Qatar · Serving the GCC & worldwide", "الدوحة، قطر · نخدم الخليج والعالم", language)}</li>
             <li><a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">{t("Calendly · Book a meeting ↗", "كاليندلي · احجز اجتماعاً ↗", language)}</a></li>
-            <li><a href={siteConfig.googleBusinessUrl} target="_blank" rel="noreferrer">{t("Google Maps · Find us ↗", "خرائط جوجل · اعثر علينا ↗", language)}</a></li>
           </ul>
         </div>
       </div>

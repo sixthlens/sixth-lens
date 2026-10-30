@@ -9,8 +9,6 @@ export const siteConfig = {
   whatsappUrl: "https://wa.me/97430313046",
   linkedinUrl: "https://www.linkedin.com/company/sixth-lens/?viewAsMember=true",
   calendlyUrl: "https://calendly.com/shoaibintech",
-  googleBusinessUrl: "https://share.google/bpJTBIXtt7XR1mXzq",
-  googleKnowledgeUrl: "https://www.google.com/search?kgmid=/g/11p2dw6732",
   location: "Doha, Qatar",
 } as const;
 

@@ -54,7 +54,7 @@ const faqs = [
 ];
 
 export default function ArabicHome() {
-  const jsonLd = { "@context": "https://schema.org", "@type": "ProfessionalService", name: siteConfig.legalName, url: `${siteConfig.url}/ar/`, description: "استوديو تقني في الدوحة لتطوير تطبيقات الجوال والويب والأنظمة الرقمية للشركات في قطر والخليج والأسواق العالمية.", inLanguage: "ar", sameAs: [siteConfig.linkedinUrl, siteConfig.googleKnowledgeUrl], areaServed: serviceAreas, knowsAbout: ["تطوير تطبيقات الجوال", "تطوير البرمجيات", "تطوير MVP", "التجارة الإلكترونية", "PEPPOL والفوترة الإلكترونية", "أنظمة CRM", "الحوسبة السحابية", "الذكاء الاصطناعي"] };
+  const jsonLd = { "@context": "https://schema.org", "@type": "ProfessionalService", name: siteConfig.legalName, url: `${siteConfig.url}/ar/`, description: "استوديو تقني في الدوحة لتطوير تطبيقات الجوال والويب والأنظمة الرقمية للشركات في قطر والخليج والأسواق العالمية.", inLanguage: "ar", areaServed: serviceAreas, knowsAbout: ["تطوير تطبيقات الجوال", "تطوير البرمجيات", "تطوير MVP", "التجارة الإلكترونية", "PEPPOL والفوترة الإلكترونية", "أنظمة CRM", "الحوسبة السحابية", "الذكاء الاصطناعي"] };
   return (
     <Shell language="ar">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
