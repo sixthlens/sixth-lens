@@ -28,7 +28,7 @@ export default async function ArabicServicePage({ params }: Props) {
           <h1>{service.title} <em>في قطر والخليج.</em></h1>
           <p className="lead">{service.description}</p>
           <div className="hero-ctas">
-            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة ↗</a>
+            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة</a>
             <Link className="btn outline" href="/ar/#contact">ابدأ مشروعاً</Link>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default async function ArabicServicePage({ params }: Props) {
           </section>
         </div>
         <div className="content-cta">
-          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">ناقش احتياجك إلى {service.title} ↗</a>
+          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">ناقش احتياجك إلى {service.title}</a>
           <Link className="btn navy" href="/ar/services/">استكشف جميع الخدمات</Link>
         </div>
       </div></section>

@@ -58,7 +58,7 @@ export function ContactFormV2({ language = "en" }: { language?: Lang }) {
         <textarea id="cf-msg" name="message" required rows={5} placeholder={t("What are you trying to improve, launch or grow?", "ما الذي تريد تحسينه أو إطلاقه أو تطويره؟", language)} />
       </div>
       <div className="form-foot">
-        <button className="btn" type="submit">{t("Send enquiry via WhatsApp ↗", "أرسل استفسارك عبر واتساب ↗", language)}</button>
+        <button className="btn" type="submit">{t("Send enquiry via WhatsApp", "أرسل استفسارك عبر واتساب", language)}</button>
         <p>{t("We reply within one business day.", "عادةً ما نرد خلال يوم عمل.", language)}</p>
       </div>
       <p className="form-status" aria-live="polite">{status}</p>

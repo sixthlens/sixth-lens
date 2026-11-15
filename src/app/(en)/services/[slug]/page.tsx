@@ -131,7 +131,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <p className="lead">{copy.lead}</p>
           <div className="hero-ctas">
             <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">
-              Book a 30-min call ↗
+              Book a 30-min call
             </a>
             <Link className="btn outline" href="/#contact">
               Start a project
@@ -188,7 +188,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               </p>
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
                 <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">
-                  Book a 30-min call ↗
+                  Book a 30-min call
                 </a>
                 <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">
                   WhatsApp us
@@ -198,15 +198,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <div className="slots">
               <Link className="slot" href="/services/">
                 <b>All services</b>
-                <span aria-hidden="true">↗</span>
               </Link>
               <Link className="slot" href="/portfolio/">
                 <b>See our work</b>
-                <span aria-hidden="true">↗</span>
               </Link>
               <Link className="slot" href="/process/">
                 <b>How we work</b>
-                <span aria-hidden="true">↗</span>
               </Link>
             </div>
           </div>

@@ -88,7 +88,6 @@ export default function ArabicHome() {
                 <div className="acc-panel">
                   <div className="acc-panel-head">
                     <h3>{detail.title}</h3>
-                    <span className="acc-arrow" aria-hidden="true">↗</span>
                   </div>
                   <ul>{detail.points.map((p) => <li key={p}>{p}</li>)}</ul>
                 </div>
@@ -96,7 +95,7 @@ export default function ArabicHome() {
             );
           })}
         </div>
-        <div style={{ textAlign: "center", marginTop: 40 }}><Link className="btn" href="/ar/services/">استكشف جميع الخدمات ↗</Link></div>
+        <div style={{ textAlign: "center", marginTop: 40 }}><Link className="btn" href="/ar/services/">استكشف جميع الخدمات</Link></div>
       </div></section>
 
       {/* Qatar photo band */}
@@ -133,7 +132,7 @@ export default function ArabicHome() {
         </div>
         <div className="ai-note">
           <p>نستكشف أيضاً إنترنت الأشياء والواقع المعزّز/الافتراضي والحوسبة الطرفية والبلوك تشين، نعتمدها فقط حيث تصنع قيمة حقيقية وقابلة للقياس، لا لمجرد المواكبة.</p>
-          <Link className="btn white" href="/ar/services/ai-data-solutions/">البيانات والذكاء الاصطناعي ↗</Link>
+          <Link className="btn white" href="/ar/services/ai-data-solutions/">البيانات والذكاء الاصطناعي</Link>
         </div>
       </div></section>
 
@@ -155,7 +154,7 @@ export default function ArabicHome() {
             </Link>
           ))}
         </div>
-        <div style={{ marginTop: 40 }}><Link className="btn white" href="/ar/portfolio/">عرض جميع المشاريع ↗</Link></div>
+        <div style={{ marginTop: 40 }}><Link className="btn white" href="/ar/portfolio/">عرض جميع المشاريع</Link></div>
       </div></section>
 
       {/* FAQ */}
@@ -184,7 +183,7 @@ export default function ArabicHome() {
             <h2 className="h2">اختر وقتاً. ونحن نأتي بالمنظور.</h2>
             <p className="body" style={{ color: "rgba(255,255,255,.85)" }}>مكالمة 30 دقيقة مع أحد المؤسسين، لا مع مندوب مبيعات. سنسأل عن عملائك وعملياتك وأنظمتك، ونصارحك بأي بُعد يجدر أن تبدأ منه.</p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">افتح التقويم ↗</a>
+              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">افتح التقويم</a>
               <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">واتساب بدلاً من ذلك</a>
             </div>
           </div>
@@ -192,7 +191,7 @@ export default function ArabicHome() {
             <span style={{ fontSize: 13, opacity: .8 }}>التواصل المباشر · توقيت الدوحة</span>
             <a className="slot" href={`tel:${siteConfig.phoneHref}`}><b>الهاتف</b><span>{siteConfig.phoneDisplay}</span></a>
             <a className="slot" href={`mailto:${siteConfig.email}`}><b>البريد الإلكتروني</b><span>{siteConfig.email}</span></a>
-            <a className="slot" href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><b>LinkedIn</b><span>صفحة الشركة ↗</span></a>
+            <a className="slot" href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><b>LinkedIn</b><span>صفحة الشركة</span></a>
           </div>
         </div>
       </div></section>

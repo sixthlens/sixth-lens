@@ -45,7 +45,6 @@ export default function PortfolioPage() {
                   <span className="pf-cat">{project.category}</span>
                   <h3>
                     {project.name}
-                    <span aria-hidden="true">↗</span>
                   </h3>
                   <p>{project.useCase}</p>
                 </div>
@@ -68,7 +67,7 @@ export default function PortfolioPage() {
               </p>
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
                 <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">
-                  Book a 30-min call ↗
+                  Book a 30-min call
                 </a>
                 <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">
                   WhatsApp us

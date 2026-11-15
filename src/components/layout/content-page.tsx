@@ -26,7 +26,7 @@ export function ContentPage({ kicker, title, accent, lead, sections, serviceName
           <h1>{title} <em>{accent}</em></h1>
           <p className="lead">{lead}</p>
           <div className="hero-ctas">
-            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a consultation ↗</a>
+            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a consultation</a>
             <Link className="btn outline" href="/#contact">Send a project enquiry</Link>
           </div>
         </div>
@@ -42,7 +42,7 @@ export function ContentPage({ kicker, title, accent, lead, sections, serviceName
           ))}
         </div>
         <div className="content-cta">
-          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a consultation ↗</a>
+          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a consultation</a>
           <Link className="btn navy" href="/services/">Explore all services</Link>
         </div>
       </div></section>

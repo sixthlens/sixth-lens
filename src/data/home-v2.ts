@@ -116,7 +116,7 @@ export const workTiles = [
 export const pricingNote = "Clear engagement models. Every project starts with a free 30-minute scoping call. No deck, no obligation.";
 export const pricingPlans = [
   {
-    name: "Sprint", for: "Validate or fix one focused thing", price: "From $4k", unit: "/ 2–3 weeks", popular: false,
+    name: "Sprint", for: "Validate or fix one focused thing", price: "From $4k", unit: "/ 2-3 weeks", popular: false,
     features: ["One clear outcome: MVP, audit or fix", "Senior product lead and engineer", "Working software, not slides", "Clear scope, fixed timeline", "Handover docs + next-step plan"],
     cta: "Book a 30-min call",
   },
@@ -152,8 +152,8 @@ export const faqs = [
 ] as const;
 
 export const bookingSlots = [
-  { day: "Tomorrow", time: "10:00 – 10:30" },
-  { day: "Tomorrow", time: "14:00 – 14:30" },
-  { day: "Thursday", time: "11:30 – 12:00" },
+  { day: "Tomorrow", time: "10:00 - 10:30" },
+  { day: "Tomorrow", time: "14:00 - 14:30" },
+  { day: "Thursday", time: "11:30 - 12:00" },
   { day: "More times", time: "→" },
 ] as const;

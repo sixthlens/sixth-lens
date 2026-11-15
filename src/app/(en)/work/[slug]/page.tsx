@@ -84,7 +84,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </div>
 
           <a className="detail-visit" href={project.url} target="_blank" rel="noreferrer">
-            Visit {project.name} ↗
+            Visit {project.name}
           </a>
         </div>
       </section>
@@ -102,7 +102,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               </p>
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
                 <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">
-                  Book a 30-min call ↗
+                  Book a 30-min call
                 </a>
                 <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">
                   WhatsApp us

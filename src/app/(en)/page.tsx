@@ -121,7 +121,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <div style={{ marginTop: 40 }}><Link className="btn white" href="/portfolio/">View all projects ↗</Link></div>
+          <div style={{ marginTop: 40 }}><Link className="btn white" href="/portfolio/">View all projects</Link></div>
         </div></section>
 
 
@@ -151,7 +151,7 @@ export default function Home() {
               <h2 className="h2">Pick a time. We&apos;ll bring the perspective.</h2>
               <p className="body" style={{ color: "rgba(255,255,255,.85)" }}>A 30-minute call with a founder, not a sales rep. We&apos;ll ask about your customers, operations and systems. Then we&apos;ll tell you honestly where to start.</p>
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-                <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a 30-min call ↗</a>
+                <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a 30-min call</a>
                 <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">WhatsApp us</a>
               </div>
             </div>

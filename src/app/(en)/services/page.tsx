@@ -43,7 +43,7 @@ export default function ServicesPage() {
           </p>
           <div className="hero-ctas">
             <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">
-              Book a 30-min call ↗
+              Book a 30-min call
             </a>
             <Link className="btn outline" href="/#contact">
               Start a project
@@ -64,7 +64,6 @@ export default function ServicesPage() {
                   <p>{item.description}</p>
                 </div>
                 <img src={img(serviceImage[item.slug] ?? "dashboard-screen")} alt={item.title} loading="lazy" />
-                <span className="srv-arrow" aria-hidden="true">↗</span>
               </Link>
             ))}
           </div>
@@ -85,7 +84,7 @@ export default function ServicesPage() {
               </p>
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
                 <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">
-                  Book a 30-min call ↗
+                  Book a 30-min call
                 </a>
                 <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">
                   WhatsApp us
@@ -95,19 +94,15 @@ export default function ServicesPage() {
             <div className="slots">
               <Link className="slot" href="/startups/">
                 <b>For startups</b>
-                <span aria-hidden="true">↗</span>
               </Link>
               <Link className="slot" href="/mvp-development/">
                 <b>MVP development</b>
-                <span aria-hidden="true">↗</span>
               </Link>
               <Link className="slot" href="/hire-a-team/">
                 <b>Hire a team</b>
-                <span aria-hidden="true">↗</span>
               </Link>
               <Link className="slot" href="/consulting/">
                 <b>Book a consultation</b>
-                <span aria-hidden="true">↗</span>
               </Link>
             </div>
           </div>

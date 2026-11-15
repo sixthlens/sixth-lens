@@ -21,7 +21,7 @@ export function AiTech() {
       </div>
       <div className="ai-note">
         <p>{aiEmerging}</p>
-        <Link className="btn white" href="/services/ai-data-solutions/">Explore Data &amp; applied AI ↗</Link>
+        <Link className="btn white" href="/services/ai-data-solutions/">Explore Data &amp; applied AI</Link>
       </div>
     </div></section>
   );

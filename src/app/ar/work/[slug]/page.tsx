@@ -45,7 +45,7 @@ export default async function ArabicProjectPage({ params }: Props) {
             <p className="body">{detail.useCase}</p>
           </div>
         </div>
-        <a className="detail-visit" href={project.url} target="_blank" rel="noreferrer">زيارة {project.name} ↗</a>
+        <a className="detail-visit" href={project.url} target="_blank" rel="noreferrer">زيارة {project.name}</a>
       </div></section>
       <section className="sec tight"><div className="wrap">
         <div className="cta-band" style={{ gridTemplateColumns: "1fr" }}>
@@ -55,7 +55,7 @@ export default async function ArabicProjectPage({ params }: Props) {
             <h2 className="h2">لديك منتج بهدف واضح؟</h2>
             <p className="body" style={{ color: "rgba(255,255,255,.85)" }}>نعمل مع فرق في قطر ودول الخليج لتحويل هدف عمل واضح إلى منتج يستخدمه الناس فعلاً. دعنا نحدد نطاق مشروعك.</p>
             <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة 30 دقيقة ↗</a>
+              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة 30 دقيقة</a>
               <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">واتساب</a>
             </div>
           </div>

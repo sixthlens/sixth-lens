@@ -50,7 +50,7 @@ export default async function ArabicContentRoute({ params }: Props) {
             <h1>{page.title} <em>{page.accent}</em></h1>
             <p className="lead">{page.lead}</p>
             <div className="hero-ctas">
-              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة ↗</a>
+              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة</a>
               <Link className="btn outline" href="/ar/#contact">أرسل استفسارك</Link>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default async function ArabicContentRoute({ params }: Props) {
                   <div className="pf-art"><img src={project.image} alt={detail.imageAlt} loading="lazy" /></div>
                   <div className="pf-body">
                     <span className="pf-cat">{detail.category}</span>
-                    <h3>{project.name}<span aria-hidden="true">↗</span></h3>
+                    <h3>{project.name}</h3>
                     <p>{detail.useCase}</p>
                   </div>
                 </Link>
@@ -80,7 +80,7 @@ export default async function ArabicContentRoute({ params }: Props) {
               <h2 className="h2">لديك منتج بهدف واضح؟</h2>
               <p className="body" style={{ color: "rgba(255,255,255,.85)" }}>أخبرنا بالنتيجة التي تريد تحقيقها، وسنرسم أقصر مسار واقعي من الفكرة إلى منتج يعتمد عليه عملاؤك وفرقك.</p>
               <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-                <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة 30 دقيقة ↗</a>
+                <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة 30 دقيقة</a>
                 <a className="btn outline" href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer">واتساب</a>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default async function ArabicContentRoute({ params }: Props) {
           <h1>{page.title} <em>{page.accent}</em></h1>
           <p className="lead">{page.lead}</p>
           <div className="hero-ctas">
-            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة ↗</a>
+            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز مكالمة</a>
             <Link className="btn outline" href="/ar/#contact">أرسل استفسارك</Link>
           </div>
         </div>
@@ -122,11 +122,11 @@ export default async function ArabicContentRoute({ params }: Props) {
         </div>
         {serviceLinks.length > 0 && (
           <div className="content-cta">
-            {serviceLinks.map(([path, label]) => <Link className="btn navy" key={path} href={`/ar/services/${path}/`}>{label} ↗</Link>)}
+            {serviceLinks.map(([path, label]) => <Link className="btn navy" key={path} href={`/ar/services/${path}/`}>{label}</Link>)}
           </div>
         )}
         <div className="content-cta">
-          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز استشارة ↗</a>
+          <a className="btn" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">احجز استشارة</a>
           <Link className="btn navy" href="/ar/services/">استكشف جميع الخدمات</Link>
         </div>
       </div></section>

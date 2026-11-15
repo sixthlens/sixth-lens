@@ -15,15 +15,42 @@ function MegaMenu({ id, label, items, menu, setMenu, closeAll, language }: {
   const isOpen = menu === id;
   const [featHref, featTitle, featBlurb] = items[0];
   const rest = items.slice(1);
+  const megaRef = useRef<HTMLDivElement>(null);
+
+  // The panel is anchored to its own trigger, so the right-hand menus (and, in
+  // Arabic, the left-hand ones) would hang off the edge of the screen and get
+  // clipped. Slide it back until it sits inside the nav bar.
+  useEffect(() => {
+    const fit = () => {
+      const el = megaRef.current;
+      if (!el) return;
+      el.style.setProperty("--mega-shift", "0px");
+      const panel = el.getBoundingClientRect();
+      if (!panel.width) return; // drawer breakpoint: menu is not rendered
+      const vw = document.documentElement.clientWidth;
+      const bar = el.closest(".bar")?.getBoundingClientRect();
+      const min = bar ? bar.left : 20;
+      const max = bar ? bar.right : vw - 20;
+      let shift = 0;
+      if (panel.right > max) shift = max - panel.right;
+      if (panel.left + shift < min) shift = min - panel.left;
+      el.style.setProperty("--mega-shift", `${Math.round(shift)}px`);
+    };
+    fit();
+    window.addEventListener("resize", fit);
+    document.fonts?.ready.then(fit).catch(() => {});
+    return () => window.removeEventListener("resize", fit);
+  }, [isOpen, label]);
+
   return (
     <div className={`nav-menu${isOpen ? " open" : ""}`}>
       <button type="button" className="nav-trigger" aria-haspopup="true" aria-expanded={isOpen} onClick={(e) => { e.stopPropagation(); setMenu(isOpen ? null : id); }}>{label}<i aria-hidden="true" /></button>
-      <div className="nav-mega" role="menu">
+      <div className="nav-mega" role="menu" ref={megaRef}>
         <Link className="nav-feature" href={featHref} role="menuitem" onClick={closeAll}>
           <span className="fk">{label}</span>
           <strong>{featTitle}</strong>
           <span className="fb">{featBlurb}</span>
-          <span className="fg">{t("View all ↗", "عرض الكل ↗", language)}</span>
+          <span className="fg">{t("View all", "عرض الكل", language)}</span>
         </Link>
         <div className="nav-items">
           {rest.map(([href, l, d]) => (
@@ -109,12 +136,12 @@ export function SiteHeaderV2({ language = "en" }: { language?: Lang }) {
         </nav>
         <div className="navactions">
           <Link className="navlang" href={isAr ? "/" : "/ar/"} lang={isAr ? "en" : "ar"} onClick={closeAll}>{isAr ? "EN" : "عربي"}</Link>
-          <a className="navphone" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">{t("Book a call ↗", "احجز مكالمة ↗", language)}</a>
+          <a className="navphone" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">{t("Book a call", "احجز مكالمة", language)}</a>
         </div>
         <button className="nav-toggle" type="button" aria-label={t("Toggle menu", "القائمة", language)} aria-expanded={open} onClick={() => setOpen((v) => !v)}><span /></button>
         <nav className="nav-drawer" aria-label="Mobile">
           {allMobile.map(([href, l]) => <Link key={href + l} href={href} onClick={closeAll}>{l}</Link>)}
-          <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">{t("Book a 30-min call ↗", "احجز مكالمة 30 دقيقة ↗", language)}</a>
+          <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">{t("Book a 30-min call", "احجز مكالمة 30 دقيقة", language)}</a>
           <Link href={isAr ? "/" : "/ar/"} lang={isAr ? "en" : "ar"} onClick={closeAll}>{isAr ? "English" : "عربي"}</Link>
         </nav>
       </div>

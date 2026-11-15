@@ -43,9 +43,9 @@ export default function Page() {
           <div className="contact-info">
             <a href={`mailto:${siteConfig.email}`}><span className="ci-label">Email</span><span className="ci-value">{siteConfig.email}</span></a>
             <a href={`tel:${siteConfig.phoneHref}`}><span className="ci-label">Phone</span><span className="ci-value">{siteConfig.phoneDisplay}</span></a>
-            <a href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer"><span className="ci-label">WhatsApp</span><span className="ci-value">Message us directly ↗</span></a>
-            <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer"><span className="ci-label">Book a call</span><span className="ci-value">30-min call on Calendly ↗</span></a>
-            <a href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><span className="ci-label">LinkedIn</span><span className="ci-value">Follow Sixth Lens ↗</span></a>
+            <a href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer"><span className="ci-label">WhatsApp</span><span className="ci-value">Message us directly</span></a>
+            <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer"><span className="ci-label">Book a call</span><span className="ci-value">30-min call on Calendly</span></a>
+            <a href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><span className="ci-label">LinkedIn</span><span className="ci-value">Follow Sixth Lens</span></a>
             <div><span className="ci-label">Studio</span><span className="ci-value">Doha, Qatar</span><span style={{ color: "var(--grey)", fontWeight: 400, fontSize: 15 }}>Serving the GCC and clients worldwide</span></div>
           </div>
           <ContactFormV2 language="en" />

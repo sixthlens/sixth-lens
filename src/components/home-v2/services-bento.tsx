@@ -18,7 +18,6 @@ export function ServicesBento() {
               <div className="acc-panel">
                 <div className="acc-panel-head">
                   <h3>{s.title}</h3>
-                  <span className="acc-arrow" aria-hidden="true">↗</span>
                 </div>
                 <ul>{s.features.map((f) => <li key={f}>{f}</li>)}</ul>
               </div>
@@ -26,7 +25,7 @@ export function ServicesBento() {
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 40 }}>
-          <Link className="btn" href="/services/">See all services ↗</Link>
+          <Link className="btn" href="/services/">See all services</Link>
         </div>
       </div>
     </section>

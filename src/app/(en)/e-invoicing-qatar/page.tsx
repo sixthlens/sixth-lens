@@ -26,7 +26,7 @@ export default function EInvoicingPage() {
           <h1>E-invoicing, <em>engineered end to end.</em></h1>
           <p className="lead">A structured e-invoice is never just a document. It moves through sales, procurement, finance and records, and through every system in between. We help you plan that flow so the change lands cleanly across the whole operation.</p>
           <div className="hero-ctas">
-            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a 30-min call ↗</a>
+            <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a 30-min call</a>
             <Link className="btn outline" href="/#contact">Start a project</Link>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function EInvoicingPage() {
             <h2 className="h2">What we plan, and what stays with your provider.</h2>
             <p style={{ maxWidth: "720px", opacity: 0.9, marginTop: "6px" }}>Our role is workflow, software and integration planning. We are not a Peppol service provider, and we do not give tax or legal advice. Network access, accreditation, tax interpretation and formal compliance depend on your chosen provider and the rules that apply to you. We make the technical path clear so those conversations are simple.</p>
             <div className="hero-ctas" style={{ marginTop: "22px" }}>
-              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a 30-min call ↗</a>
+              <a className="btn white" href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer">Book a 30-min call</a>
               <Link className="btn outline" href="/#einvoicing">Back to overview</Link>
             </div>
           </div>

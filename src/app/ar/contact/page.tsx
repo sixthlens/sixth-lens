@@ -45,9 +45,9 @@ export default function Page() {
           <div className="contact-info">
             <a href={`mailto:${siteConfig.email}`}><span className="ci-label">البريد الإلكتروني</span><span className="ci-value">{siteConfig.email}</span></a>
             <a href={`tel:${siteConfig.phoneHref}`}><span className="ci-label">الهاتف</span><span className="ci-value">{siteConfig.phoneDisplay}</span></a>
-            <a href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer"><span className="ci-label">واتساب</span><span className="ci-value">راسلنا مباشرة ↗</span></a>
-            <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer"><span className="ci-label">احجز اجتماعاً</span><span className="ci-value">مكالمة 30 دقيقة عبر Calendly ↗</span></a>
-            <a href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><span className="ci-label">لينكد إن</span><span className="ci-value">تابع سِكْسث لينس ↗</span></a>
+            <a href={siteConfig.whatsappUrl} target="_blank" rel="noreferrer"><span className="ci-label">واتساب</span><span className="ci-value">راسلنا مباشرة</span></a>
+            <a href={siteConfig.calendlyUrl} target="_blank" rel="noreferrer"><span className="ci-label">احجز اجتماعاً</span><span className="ci-value">مكالمة 30 دقيقة عبر Calendly</span></a>
+            <a href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer"><span className="ci-label">لينكد إن</span><span className="ci-value">تابع سِكْسث لينس</span></a>
             <div><span className="ci-label">المقر</span><span className="ci-value">الدوحة، قطر</span><span style={{ color: "var(--grey)", fontWeight: 400, fontSize: 15 }}>نخدم دول الخليج وعملاء حول العالم</span></div>
           </div>
           <ContactFormV2 language="ar" />
